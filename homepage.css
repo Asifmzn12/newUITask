@@ -1,0 +1,281 @@
+@font-face {
+    font-family: Electra LTStd;
+    src: url('./font/Electra\ LT\ Std\ Regular.otf');
+}
+
+
+:root {
+    --primary-color: #a48247;
+    --secondry-color: blue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Electra LTStd', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+
+.bg-linear {
+    background: linear-gradient(rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.7) 50%, transparent);
+}
+
+.nav-item>.nav-link {
+    color: white !important;
+    font-size: 20px;
+}
+
+.navbar-brand img {
+    width: 250px;
+
+}
+.navbar-toggler{
+    border: 0px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("./assests/icons/menu2.svg") !important;
+    transition: background-image 0.3s ease-in;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    background-image: url("./assests/icons/close.svg") !important;
+}
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-block: 20px;
+    background: #1817179c;
+    border-radius: 5px;
+    z-index: 9999;
+
+}F
+
+.carousel-item img {
+    max-height: 900px !important;
+}
+
+.width {
+    width: 100%;
+}
+
+.carousel-control-prev {
+
+    display: none !important;
+}
+
+.carousel-control-next {
+    display: none !important;
+}
+
+@media only screen and (min-width:992px) {
+    .width{
+        width: 80%;
+    }
+    .navbar-brand img {
+        width: 210px;
+    
+    }
+
+}
+
+.form-control,
+.form-select,.btn {
+    border-radius: 3px !important;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(48%) sepia(28%) saturate(627%) hue-rotate(337deg) brightness(96%) contrast(88%);
+    color: var(--primary-color);
+}
+
+
+
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-height: 700px;
+    transition: transform 0.5s ease-in-out; 
+
+}
+
+.swiper-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+
+.swiper-slide img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    min-height: 600px !important;
+    position: relative;
+    z-index: 0;
+}
+
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--primary-color) !important;
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+.swiper-button-next, .swiper-button-prev{
+    color: #fff !important;
+}
+
+.btn-search{
+    background: var(--primary-color);
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+input,select,button{
+    height: 2.6rem !important;
+}
+
+@media (max-width:991px) {
+    .form {
+     
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0,0);
+        padding-block: 10px;
+        background: #fcfcfc57;
+        border-radius: 5px;
+        z-index: 9999;
+    
+    }
+    .swiper-button-next, .swiper-button-prev{
+        display: none !important;
+    }
+
+    .swiper-slide{
+        min-height: auto;
+    }
+    
+.swiper-slide img {
+  
+    min-height: 400px !important;
+    
+}
+.swiper-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+.navbar-nav{
+background: #000;
+}
+.bg-sm-black{
+background: #000;
+}
+.navbar-brand img {
+    width: 210px;
+
+}
+    
+}
+/* Hide dropdown icon on large screens */
+@media (min-width: 992px) {
+    .navbar-nav .nav-item.dropdown .nav-link::after {
+        display: none;
+    }
+
+    /* Show dropdown on hover with smooth transition */
+    .navbar-nav .nav-item.dropdown .dropdown-menu {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        max-height: 300px; /* Adjust based on content height */
+    }
+}
+
+/* Ensure the dropdowns work correctly on smaller screens */
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    display: none;
+}
+
+.navbar-nav .nav-item.dropdown.show .dropdown-menu {
+    display: block;
+}
