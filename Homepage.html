@@ -9,6 +9,9 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="homepage.css">
@@ -144,7 +147,7 @@
                             <div class="row g-1 gy-3 justify-content-between align-items-center">
                                 <div class="col-lg-2 col-6">
                                     <div class="">
-                                        <input type="date" id="arrival" class="form-control " tabindex="1"
+                                        <input type="text" id="arrival" class="form-control " tabindex="1"
                                             placeholder="Arrival">
 
                                     </div>
@@ -152,7 +155,7 @@
                                 </div>
                                 <div class="col-lg-2 col-6">
                                     <div class="">
-                                        <input type="date" id="departure" class="form-control " tabindex="1"
+                                        <input type="text" id="departure" class="form-control " tabindex="1"
                                             placeholder="departure">
 
                                     </div>
@@ -297,14 +300,14 @@
 
 
             </section>
-            <section id="Testimonials" class="aboutus py-4 text-center py-5 overflow-hidden" >
+            <section id="Testimonials" class="aboutus py-4 text-center overflow-hidden">
                 <h2 class="text-center mb-3">WHAT GUESTS ARE SAYING ABOUT WLVR</h2>
                 <div class="widget-wrap container">
                     <div class="row justify-content-center align-items-center">
                         <div class="mySwiper2 swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class="card1 rounded-4 d-flex flex-column gap-2 testimonial">
+                                    <div class="testimonial rounded-4 d-flex flex-column gap-2 testimonial">
                                         <div class="d-flex justify-content-between ">
                                             <div class="d-flex justify-content-between align-items-center gap-2">
                                                 <img src="./assests/images/userimg.jpg"
@@ -546,90 +549,214 @@
 
 
         </div>
-        <section class="footer">
-            <footer class="container">
+        <section class="footer  text-white overflow-hidden">
+            <footer class="container py-5">
+                <div class="row gy-3">
+                    <div class="col-md-4 text-white d-flex flex-column gap-3">
+                        <div class="contact">
+                            <h4 class="title">Contact Us</h4>
+                            <p>Walker Luxury Vacation Rentals</p>
+                            <p>PO Box 163065</p>
+                            <p>Austin, TX 78716</p>
+                            <p>Phone: <a href="#">512-501-3580</a></p>
+
+                        </div>
+                        <!-- <div class="proud-members">
+                            <h4 class="title text-capitalize">Proud Members Of</h4>
+                            <a href="#"><img src="./assests/images/verma.png" class="img-fluid" alt="VRMA Members"></a>
+                        </div> -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="quick-links">
+                            <h4 class="title">Quick Links</h4>
+                            <ul class="list-unstyled d-flex flex-column gap-3">
+                                <li class=""><a href="#">Home</a></li>
+
+                                <li class=""><a href="#" target="_blank" rel="noopener">Guest Portal</a></li>
+                                <li class=""><a href="#" target="_blank" rel="noopener">Owner Login</a></li>
+                                <li class=""><a href="#">About Us</a></li>
+                                <li class=""><a href="#">Sitemap</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+
+                        <div class="row">
+                            <div class="col-md-8 col-9  d-flex flex-column gap-3">
+                                <h4 class="title text-capitalize">Find property by name</h4>
+                                <select class="form-select">
+                                    <option value="/">- Choose -</option>
+                                    <option>Always on my Mind</option>
+                                    <option>Beautiful Day</option>
+                                    <option>Daniel House</option>
+                                    <option>French Polo Estate</option>
+                                    <option>Good Life</option>
+                                    <option>Good Vibrations</option>
+                                    <option>Here Comes the Sun</option>
+                                    <option>Hill Country Hideaway</option>
+                                    <option>Isnt She Lovely</option>
+                                    <option>Lake Austin Modern</option>
+                                    <option>Lake Austin Retreat</option>
+                                    <option>Lake Travis Escape</option>
+                                    <option>Loft On Congress</option>
+                                    <option>Lola's Lakefront</option>
+                                    <option>Send The Light</option>
+                                    <option>Skyhurst</option>
+                                    <option>Soak Up The Sun</option>
+                                    <option>Some Kind of Wonderful</option>
+                                    <option>South Congress Custom House</option>
+                                    <option>Southside of Heaven</option>
+                                    <option>Stairway to Heaven</option>
+                                    <option>Sundown Escape</option>
+                                    <option>Taking in the View</option>
+                                    <option>The Owners House</option>
+                                    <option>Westlake Hills Designer</option>
+                                    <option>Windwalker Ranch</option>
+                                    <option>Wish You Were Here</option>
+                                </select>
+
+                                </span>
+                            </div>
+                            <a href="#" rel="botton"><img
+                                    src="https://www.walkervr.com/wp-content/uploads/2023/06/Vrbo-VHOTY-Badge_2023_Arctic-Fjord.png"
+                                    class="awardImg" width="100" height="100" alt="Vacation home of the year 2023"
+                                    title="Vacation home of the year 2023"></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row py-5 gy-3 inner-footer rounded my-3 justify-content-around ">
+                    <div class="col-md-4">
+                        <div class="aboutcompony d-flex flex-column gap-3 align-items-start">
+                            <img src="./assests/images/verma.png" class="img-fluid" alt="compony-logo">
+                            <p class="m-0 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis autem dolorem
+                                vitae, labore eligendi molestias voluptatum optio eveniet fuga adipisci.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-8 d-flex justify-content-md-end">
+                        <div class="subscribe ">
+                            <h4 class="text-capitalize text-center">subscribe to our newsletter</h4>
+                            <form>
+                                <div class="position-relative">
+
+                                    <input type="email" class="form-control py-3" id="" aria-describedby="emailHelp">
+                                    <a class="text-decoration-none sbscribe">Subscribe</a>
+                                </div>
 
 
+                            </form>
+                        </div>
 
-            </footer>
+                    </div>
+                    <hr class="w-100">
+                    <div class="policies">
+                        <ul class="d-flex flex-column flex-md-row gap-3 list-unstyled ">
+                            <li> <a class="">Terms of use</a></li>
+                            <li> <a class="border-">Privacy & Cockies</a></li>
+                            <li><a class="">Terms & Conditions</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="copywrite d-flex flex-wrap justify-content-between mt-4 gap-3">
+                    <p class="m-0">© 2024 Walker Luxury Vacation Rentals All rights reserved.</p>
+                    <div class="social d-flex align-items-center gap-3">
+                        <span>Follow us : </span>
+                        <div class="social-icons d-flex gap-3">
+                            <i class="fa-brands fa-facebook-f fa-xl" title="acebook"></i>
+                            <i class="fa-brands fa-instagram fa-xl" title="Instagram"></i>
+                            <i class="fa-brands fa-x-twitter fa-xl" title="X"></i>
+                            <i class="fa-brands fa-linkedin-in fa-xl" title="LinkedIn"></i>
+                        </div>
+                    </div>
+                </div>
         </section>
 
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
-    <script src="./js/bootstrap.bundle.js"></script>
-    <script>
-        const arrivalInput = document.getElementById('arrival');
-
-        arrivalInput.addEventListener('focus', () => {
-            arrivalInput.showPicker();
-        });
-        const departure = document.getElementById('departure');
-
-        departure.addEventListener('focus', () => {
-            departure.showPicker();
-        });
-
-    </script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "fade",
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
 
 
-    <script>
-        var swiper = new Swiper(".mySwiper2", {
-
-           
-            centeredSlides: true,
-            speed: 2500,
-            autoplay: {
-                delay: 0,
-            },
-            loop: true,
-            slidesPerView: '1',
-            allowTouchMove: false,
-            disableOnInteraction: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-             breakpoints: {
-               
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-            },
+    </footer>
+    </section>
 
 
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="./js/bootstrap.bundle.js" defer></script>
+
+    <script defer>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const arrivalInput = document.getElementById('arrival');
+            const departureInput = document.getElementById('departure');
+
+            arrivalInput.addEventListener('focus', () => {
+                arrivalInput.showPicker();
+            });
+
+            departureInput.addEventListener('focus', () => {
+                departureInput.showPicker();
+            });
         });
     </script>
+
+    <script defer>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const progressCircle = document.querySelector(".autoplay-progress svg");
+            const progressContent = document.querySelector(".autoplay-progress span");
+
+            const swiper1 = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev"
+                },
+                on: {
+                    autoplayTimeLeft(s, time, progress) {
+                        progressCircle.style.setProperty("--progress", 1 - progress);
+                        progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+                    }
+                }
+            });
+
+            const swiper2 = new Swiper(".mySwiper2", {
+                centeredSlides: true,
+                speed: 2500,
+                autoplay: {
+                    delay: 0,
+                },
+                loop: true,
+                slidesPerView: '1',
+                allowTouchMove: false,
+                disableOnInteraction: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                },
+            });
+        });
+    </script>
+
 
 </body>
 

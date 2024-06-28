@@ -5,6 +5,9 @@
 :root {
     --primary-color: #a48247;
     --secondry-color: #f3eee4;
+    --white-color:#ffffff;
+    --footer-color:#000;
+    --border-color:#dee2e6;
 }
 
 * {
@@ -25,6 +28,7 @@ body {
 
 }
 
+/* Navbar Css */
 .bg-linear {
     background: linear-gradient(rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.7) 50%, transparent);
 }
@@ -56,6 +60,7 @@ body {
     box-shadow: none !important;
 }
 
+/* Form Css */
 .form {
 
     position: absolute;
@@ -71,6 +76,24 @@ body {
 
 .width {
     width: 100%;
+}
+
+
+.form-control,
+.form-select,
+.btn {
+    border-radius: 3px !important;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(48%) sepia(28%) saturate(627%) hue-rotate(337deg) brightness(96%) contrast(88%);
+    color: var(--primary-color);
+}
+
+input,
+select,
+button {
+    height: 2.6rem !important;
 }
 
 
@@ -94,20 +117,8 @@ body {
 
 }
 
-.form-control,
-.form-select,
-.btn {
-    border-radius: 3px !important;
-}
 
-input[type="date"]::-webkit-calendar-picker-indicator {
-    filter: invert(48%) sepia(28%) saturate(627%) hue-rotate(337deg) brightness(96%) contrast(88%);
-    color: var(--primary-color);
-}
-
-
-
-
+/* Swiper Css  */
 html,
 body {
     position: relative;
@@ -188,12 +199,6 @@ body {
     font-weight: 600;
 }
 
-input,
-select,
-button {
-    height: 2.6rem !important;
-}
-
 
 
 
@@ -229,9 +234,20 @@ button {
 
 .aboutus {
     background-color: var(--secondry-color);
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Testimonial Css */
+#Testimonials h2{
+ position: relative;
+ top: -40px;
 }
 
-.card1 {
+
+.testimonial {
     max-width: 500px;
     height: 200px;
     border-radius: 5px;
@@ -242,9 +258,37 @@ button {
     box-shadow: #fff;
     border-radius: 16px !important;
 }
-.card1 img{
+.testimonial img{
     max-width: 50px;
 }
+/* Footer Css */
+.footer{
+    background: var(--footer-color);
+    
+}
+.footer a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+.inner-footer{
+    background-color: var(--primary-color);
+}
+form .sbscribe{
+    position: absolute;
+    color: black !important;
+    right: 9px;
+    top: 9px;
+    font-weight: 600;
+}
+
+.policies ul li a {
+    cursor: pointer;
+    
+}
+
+
+
+/* Swiper Css*/
 .slidebtns {
     width: 54px;
     height: 54px;
@@ -288,9 +332,6 @@ button {
     color: #fff !important;
 }
 
-/* .bg-img{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #A1ABB2 url("./assests/images/listbg.jpg") center no-repeat;
-    } */
 
 
 .slider {
@@ -307,7 +348,6 @@ button {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Change the color and opacity as needed */
 }
 
 .slider-text {
@@ -316,7 +356,6 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    /* Ensure the text is visible over the overlay */
 }
 
 .banner-title {
@@ -335,7 +374,6 @@ button {
 
 .button-primary {
     background-color: var(--primary-color);
-    /* Adjust as needed */
     color: #fff;
     padding: 15px 20px;
     text-decoration: none;
@@ -383,6 +421,9 @@ button {
 .w-85{
     width: 85%;
 }
+
+
+/* Responsive Css */
 @media (min-width: 992px) {
     .navbar-nav .nav-item.dropdown .nav-link::after {
         display: none;
@@ -429,12 +470,12 @@ button {
     }
 
     .mySwiper.swiper-slide {
-        min-height: auto;
+        height: 65vh !important;
     }
 
     .mySwiper  .swiper-slide img {
 
-        min-height: 100vh !important;
+        min-height: 60vh !important;
 
     }
 
