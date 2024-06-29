@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/contactus.css">
+</head>
+
+<body>
+    <div class="container-fluid g-0">
+        <div class="wrapper">
+            <nav class="navbar navbar-expand-lg bg-linear text-white py-3 px-2 fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="./Homepage.html">
+                        <img src="./assests/images/logo.png" class="img-fluid" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end position-relative z-1" id="navbarNav">
+                        <ul class="navbar-nav gap-2 bg-sm-black align-items-center gy-3 py-4">
+                            <li class="nav-item">
+                                <a href="./Homepage.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="vacationRentalsDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Vacation Rentals
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark bg-dark"
+                                    aria-labelledby="vacationRentalsDropdown">
+                                    <li><a class="dropdown-item " href="#">Rental 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Rental 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Rental 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="vacationPlanningDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Vacation Planning
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark bg-dark"
+                                    aria-labelledby="vacationPlanningDropdown">
+                                    <li><a class="dropdown-item" href="#">Planning 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Planning 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Planning 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="content" class="flex-grow-1">
+                <div class="hero-section ">
+                    <div class="container container-wrapper">
+                        <div class="row justify-content-between gy-3 align-items-center">
+                            <div class="col-md-4">
+                                <div class="contact-text d-flex flex-column gap-2">
+                                    <p class="m-0">How can we help you?</p>
+                                    <h1 class="">Get in touch</h1>
+                                    <p class="m-0">We’re here to help and answer any questions you
+                                        might have. We look forward to hearing from you!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-8 hero-img text-center">
+                                <img src="./assests/images/contactus.png" class="img-fluid" alt="contactbg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ContactCards">
+                    <div class="container py-4">
+                        <div class="row gy-3">
+                            <div class="col-md-6 d-flex ">
+                                <div class="card shadow">
+
+                                    <div class="card-body d-flex flex-column gap-2 py-5 justify-content-center ">
+                                        <h3 class="">Call us</h3>
+                                        <p class="card-text ">Give us a call and we’ll help you find the best resources
+                                            to answer any questions.</p>
+                                        <a href="#"
+                                            class="text-decoration-none text-dark fw-bold"><span>+91-888888888</span></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 d-flex  ">
+                                <div class=" card shadow w-100">
+
+                                    <div class="card-body d-flex flex-column gap-2 py-5 justify-content-center">
+                                        <h3>General Inquiries</h3>
+                                        <p class="card-text">For anything else, you can send us a note any time.</p>
+                                        <a href="#" class="text-decoration-none text-dark fw-bold">
+                                            Send us a note </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <section id="formcontainer">
+                    <div class="container py-lg-5 py-3">
+                       
+                        <div class="row gy-2">
+                            <div class="col-md-6">
+                                <iframe class="map-iframe" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.1357%2C51.5227%2C-0.1057%2C51.5327&amp;layer=mapnik" style="border: 1px solid black"></iframe>
+
+                            </div>
+                            <!-- <div class="col-md-6">
+                                <div class="card shadow p-4">
+                                    <h4 class=" mb-3">Fill the form for more details</h4>
+                                    <form class="form ">
+                                        <div class="row  gy-3 justify-content-between align-items-center">
+                                            <div class="col-6">
+                                                <div class="">
+                                                    <label class="">First Name</label>
+                                                    <input type="text" id="arrival" class="form-control " tabindex="1"
+                                                        placeholder="First Name">
+    
+                                                </div>
+    
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="">
+                                                    <label class="" required>Last Name</label>
+                                                    <input type="text" id="arrival" class="form-control " tabindex="1"
+                                                        placeholder="">
+    
+                                                </div>
+    
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="">
+                                                    <label class="">Email </label>
+                                                    <input type="email" id="arrival" class="form-control " tabindex="1"
+                                                        placeholder="">
+    
+                                                </div>
+    
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="">
+                                                    <label class="">Message</label>
+                                                   <textarea class="form-control" tabindex="1" placeholder="">I'm interested in learning more about...
+                                                   </textarea>
+    
+                                                </div>
+    
+                                            </div>
+                                            <div class=" col-12">
+                                                <button type="submit" class="btn btn-search w-100 ">Send Message</button>
+    
+                                            </div>
+    
+    
+                                        </div>
+    
+    
+    
+    
+                                    </form>
+
+                                </div>
+                            </div> -->
+                            
+                            <div class="col-md-6">
+                              
+                                <div class="card shadow py-4 ">
+                                    <h4 class="text-center mb-3">Search Our Rentals</h4>
+                                    <form class="form ">
+                                        <div class="row mx-1 gy-3 justify-content-between align-items-center">
+                                            <div class="col-6">
+                                                <div class="">
+                                                    <input type="text" id="arrival" class="form-control " tabindex="1"
+                                                        placeholder="Arrival">
+    
+                                                </div>
+    
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="">
+                                                    <input type="text" id="departure" class="form-control " tabindex="1"
+                                                        placeholder="Departure">
+    
+                                                </div>
+    
+                                            </div>
+                                            <div class="col-12">
+                                                <select class="form-select " aria-label="Default select example">
+                                                    <option selected>Occupancy</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+    
+                                            </div>
+                                            <div class=" col-12">
+                                                <select class="form-select " aria-label="Default select example">
+                                                    <option selected>Destination</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+    
+                                            </div>
+                                            <div class=" col-12">
+                                                <button type="submit" class="btn btn-search w-100 ">Search</button>
+    
+                                            </div>
+    
+    
+                                        </div>
+    
+    
+    
+    
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="our-offices">
+                    <div class="container py-lg-5 py-4">
+                        <h1 class="mb-md-4 mb-3">Our Offices</h1>
+                        <div class="row gy-3">
+                            <div class="col-md-4 col-lg-3 d-flex">
+                                <div class="card shadow">
+                                    <img src="./assests/images/office1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicago - Headquarters</h5>
+                                        <p class="">131 S Dearborn St.
+                                            <br>
+                                            Suite 700
+                                            <br>
+                                            Chicago, IL 60603
+                                        </p>
+                                        <a href="#" class="text-primary text-decoration-none">Get directions
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 d-flex">
+                                <div class="card shadow">
+                                    <img src="./assests/images/office2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Seattle</h5>
+                                        <p class="">131 S Dearborn St.
+                                            <br>
+                                            Suite 700
+                                            <br>
+                                            Chicago, IL 60603
+                                        </p>
+                                        <a href="#" class="text-primary text-decoration-none">Get directions
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 d-flex">
+                                <div class="card shadow">
+                                    <img src="./assests/images/office3.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Poland</h5>
+                                        <p class="">131 S Dearborn St.
+                                            <br>
+                                            Suite 700
+                                            <br>
+                                            Chicago, IL 60603
+                                        </p>
+                                        <a href="#" class="text-primary text-decoration-none">Get directions
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 d-flex ">
+                                <div class="card shadow">
+                                    <img src="./assests/images/office4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">India</h5>
+                                        <p class="">131 S Dearborn St.
+                                            <br>
+                                            Suite 700
+                                            <br>
+                                            Chicago, IL 60603
+                                        </p>
+                                        <a href="#" class="text-primary text-decoration-none">Get directions
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <section class="footer py-lg-4 py-1 text-white overflow-hidden">
+                <footer class="container py-5">
+                    <div class="row gy-3">
+                        <div class="col-md-4 text-white d-flex flex-column gap-3">
+                            <div class="contact">
+                                <h4 class="title">Contact Us</h4>
+                                <p class="mb-0">Walker Luxury Vacation Rentals</p>
+                                <p class="mb-0">PO Box 163065</p>
+                                <p class="mb-0">Austin, TX 78716</p>
+                                <p>Phone: <a href="#">512-501-3580</a></p>
+
+                            </div>
+                            <!-- <div class="proud-members">
+                             <h4 class="title text-capitalize">Proud Members Of</h4>
+                             <a href="#"><img src="./assests/images/verma.png" class="img-fluid" alt="VRMA Members"></a>
+                         </div> -->
+                        </div>
+                        <div class="col-md-4">
+                            <div class="quick-links">
+                                <h4 class="title">Quick Links</h4>
+                                <ul class="list-unstyled d-flex flex-column gap-3">
+                                    <li class=""><a href="#">Home</a></li>
+
+                                    <li class=""><a href="#" target="_blank" rel="noopener">Guest Portal</a></li>
+                                    <li class=""><a href="#" target="_blank" rel="noopener">Owner Login</a></li>
+                                    <li class=""><a href="#">About Us</a></li>
+                                    <li class=""><a href="#">Sitemap</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+
+                            <div class="row">
+                                <div class="col-md-8 col-9  d-flex flex-column gap-3">
+                                    <h4 class="title text-capitalize">Find property by name</h4>
+                                    <select class="form-select">
+                                        <option value="/">- Choose -</option>
+                                        <option>Always on my Mind</option>
+                                        <option>Beautiful Day</option>
+                                        <option>Daniel House</option>
+                                        <option>French Polo Estate</option>
+                                        <option>Good Life</option>
+                                        <option>Good Vibrations</option>
+                                        <option>Here Comes the Sun</option>
+                                        <option>Hill Country Hideaway</option>
+                                        <option>Isnt She Lovely</option>
+                                        <option>Lake Austin Modern</option>
+                                        <option>Lake Austin Retreat</option>
+                                        <option>Lake Travis Escape</option>
+                                        <option>Loft On Congress</option>
+                                        <option>Lola's Lakefront</option>
+                                        <option>Send The Light</option>
+                                        <option>Skyhurst</option>
+                                        <option>Soak Up The Sun</option>
+                                        <option>Some Kind of Wonderful</option>
+                                        <option>South Congress Custom House</option>
+                                        <option>Southside of Heaven</option>
+                                        <option>Stairway to Heaven</option>
+                                        <option>Sundown Escape</option>
+                                        <option>Taking in the View</option>
+                                        <option>The Owners House</option>
+                                        <option>Westlake Hills Designer</option>
+                                        <option>Windwalker Ranch</option>
+                                        <option>Wish You Were Here</option>
+                                    </select>
+
+                                    </span>
+                                </div>
+                                <a href="#" rel="botton"><img
+                                        src="https://www.walkervr.com/wp-content/uploads/2023/06/Vrbo-VHOTY-Badge_2023_Arctic-Fjord.png"
+                                        class="awardImg" width="100" height="100" alt="Vacation home of the year 2023"
+                                        title="Vacation home of the year 2023"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row py-5 gy-3 inner-footer rounded my-3 justify-content-around ">
+                        <div class="col-md-4">
+                            <div class="aboutcompony d-flex flex-column gap-3 align-items-start">
+                                <img src="./assests/images/verma.png" class="img-fluid" alt="compony-logo">
+                                <p class="m-0 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis autem
+                                    dolorem
+                                    vitae, labore eligendi molestias voluptatum optio eveniet fuga adipisci.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-8 d-flex justify-content-md-end d-none d-md-flex">
+                            <div class="subscribe ">
+                                <h4 class="text-capitalize text-center">subscribe to our newsletter</h4>
+                                <form>
+                                    <div class="position-relative">
+
+                                        <input type="email" class="form-control inputsbs " placeholder="xyz@gmail.com"
+                                            id="" aria-describedby="emailHelp">
+                                        <a class="text-decoration-none sbscribe"><i
+                                                class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
+                                    </div>
+
+
+                                </form>
+                            </div>
+
+                        </div>
+                        <hr class="w-100">
+                        <div class="policies">
+                            <ul class="d-flex flex-column flex-md-row gap-3 list-unstyled ">
+                                <li> <a class="">Terms of use</a></li>
+                                <li> <a class="border-">Privacy & Cockies</a></li>
+                                <li><a class="">Terms & Conditions</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="copywrite d-flex flex-wrap justify-content-between mt-4 gap-3">
+                        <p class="m-0">© 2024 Walker Luxury Vacation Rentals All rights reserved.</p>
+                        <div class="social d-flex align-items-center gap-3">
+                            <span>Follow us : </span>
+                            <div class="social-icons d-flex gap-3">
+                                <i class="fa-brands fa-facebook-f " title="facebook"></i>
+                                <i class="fa-brands fa-instagram" title="Instagram"></i>
+                                <i class="fa-brands fa-x-twitter " title="X"></i>
+                                <i class="fa-brands fa-linkedin-in" title="LinkedIn"></i>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    </footer>
+    </section>
+
+
+    </div>
+
+    <script src="./js/bootstrap.bundle.js" defer></script>
+
+
+
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbar = document.querySelector('.navbar');
+            let lastScrollTop = 0;
+
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+                if (currentScroll > lastScrollTop) {
+
+                    navbar.classList.add('navbar-hidden');
+                } else {
+
+                    navbar.classList.remove('navbar-hidden');
+                }
+
+                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+            });
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
