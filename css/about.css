@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #684f2c;
-    --secondry-color: #f3eee4;
-    --white-color: #ffffff;
-    --footer-color: #000;
-    --border-color: #dee2e6;
-    --primary-button-hover: #49351a;
-  }
+  --primary-color: #684f2c;
+  --secondry-color: #f3eee4;
+  --white-color: #ffffff;
+  --footer-color: #000;
+  --border-color: #dee2e6;
+  --primary-button-hover: #49351a;
+}
   
 *{
     box-sizing: border-box;
@@ -14,7 +14,8 @@
 }
 
 .about_image img{
-    max-width: 500px;
+   margin-top: 24px;
+ 
 }
 .timeline {
     position: relative;

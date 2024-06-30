@@ -3,13 +3,13 @@
 
 
 :root {
-    --primary-color: #684F2C;
+    --primary-color: #684f2c;
     --secondry-color: #f3eee4;
-    --white-color:#ffffff;
-    --footer-color:#000;
-    --border-color:#dee2e6;
-    --primary-button-hover: #684F2C;
-}
+    --white-color: #ffffff;
+    --footer-color: #000;
+    --border-color: #dee2e6;
+    --primary-button-hover: #49351a;
+  }
 
 * {
     margin: 0;
@@ -82,16 +82,25 @@ body {
     padding: 27px;
 
 }
-.inputsbs{
-   display: inline-block;
-   padding-block: 25px ;
-}
+
 
 
 .width {
     width: 100%;
 }
 
+
+
+
+.calendar {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--primary-color);
+    z-index: 9999;
+}
 
 .form-control,
 .form-select,
@@ -104,10 +113,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: var(--primary-color);
 }
 
-input,
-select,
-button {
-    height: 2.6rem !important;
+
+.form-select,.form-control{
+    padding-block: 15px;
+}
+.form-select:focus,.form-control:focus{
+ box-shadow: none;
 }
 
 
@@ -212,6 +223,7 @@ body {
     letter-spacing: 2px;
     font-weight: 600;
     transition: all 0.3s ease-in;
+    padding-block:15px ;
 }
 .btn-search:hover{
     background-color: var(--primary-button-hover) !important;
@@ -225,7 +237,7 @@ body {
 
     color: #fff;
 
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #A1ABB2 url("/assests/images/listbg.jpg") center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #A1ABB2 url("/assests/images/listbg.webp") center no-repeat;
     height: 900px;
     background-size: cover;
     position: relative;

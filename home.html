@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/homepage.css">
@@ -23,7 +25,7 @@
         <nav class="navbar navbar-expand-lg bg-linear text-white py-3 px-2 fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand text-white" href="./home.html">
-                    <img src="./assests/images/logo.png" class="img-fluid" alt="Logo">
+                    <img src="./assests/images/logo.webp" class="img-fluid" alt="Logo">
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -35,18 +37,27 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="vacationRentalsDropdown" role="button"
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Vacation Rentals</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Vacation Planning</a>
+
+                        </li>
+
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="www.google.com" id="vacationRentalsDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Vacation Rentals
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="vacationRentalsDropdown">
+                            <ul class="dropdown-menu w-100 " aria-labelledby="vacationRentalsDropdown">
                                 <li><a class="dropdown-item " href="#">Rental 1</a></li>
                                 <li><a class="dropdown-item" href="#">Rental 2</a></li>
                                 <li><a class="dropdown-item" href="#">Rental 3</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item dropdown">
+                        </li> -->
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="vacationPlanningDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Vacation Planning
@@ -56,7 +67,7 @@
                                 <li><a class="dropdown-item" href="#">Planning 2</a></li>
                                 <li><a class="dropdown-item" href="#">Planning 3</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a href="./about.html" class="nav-link">About us</a>
                         </li>
@@ -150,17 +161,20 @@
                         <div class="container-fluid">
                             <div class="row g-1 gy-3 justify-content-between align-items-center">
                                 <div class="col-lg-2 col-6">
-                                    <div class="">
-                                        <input type="text" id="arrival" class="form-control " tabindex="1"
+                                    <div class="position-relative">
+                                        <input type="text" id="arrival" autocomplete="off"   class="form-control " tabindex="1"
                                             placeholder="Arrival">
+                                            <i class="fa-solid fa-calendar-days calendar "></i>
 
                                     </div>
 
                                 </div>
                                 <div class="col-lg-2 col-6">
-                                    <div class="">
+                                    <div class="position-relative">
                                         <input type="text" id="departure" class="form-control " tabindex="1"
                                             placeholder="Departure">
+                                            <i class="fa-solid fa-calendar-days calendar "></i>
+
 
                                     </div>
 
@@ -314,7 +328,7 @@
                                     <div class="testimonial rounded-4 d-flex flex-column gap-2 testimonial">
                                         <div class="d-flex justify-content-between ">
                                             <div class="d-flex justify-content-between align-items-center gap-2">
-                                                <img src="./assests/images/userimg.jpg"
+                                                <img src="./assests/images/userimg.webp"
                                                     class="img-fluid align-self-center" alt="img">
                                             </div>
                                             <div class="d-flex">
@@ -339,7 +353,7 @@
                                     <div class="card1 rounded-4 d-flex flex-column gap-2 testimonial">
                                         <div class="d-flex justify-content-between ">
                                             <div class="d-flex justify-content-between align-items-center gap-2">
-                                                <img src="./assests/images/userimg.jpg"
+                                                <img src="./assests/images/userimg.webp"
                                                     class="img-fluid align-self-center" alt="img">
                                             </div>
                                             <div class="d-flex ">
@@ -364,7 +378,7 @@
                                     <div class="card1 rounded-4 d-flex flex-column gap-2 testimonial">
                                         <div class="d-flex justify-content-between ">
                                             <div class="d-flex justify-content-between align-items-center gap-2">
-                                                <img src="./assests/images/userimg.jpg"
+                                                <img src="./assests/images/userimg.webp"
                                                     class="img-fluid align-self-center" alt="img">
                                             </div>
                                             <div class="d-flex">
@@ -389,7 +403,7 @@
                                     <div class="card1 rounded-4 d-flex flex-column gap-2 testimonial">
                                         <div class="d-flex justify-content-between ">
                                             <div class="d-flex justify-content-between align-items-center gap-2">
-                                                <img src="./assests/images/userimg.jpg"
+                                                <img src="./assests/images/userimg.webp"
                                                     class="img-fluid align-self-center" alt="img">
                                             </div>
                                             <div class="d-flex">
@@ -414,7 +428,7 @@
                                     <div class="card1 rounded-4 d-flex flex-column gap-2 testimonial">
                                         <div class="d-flex justify-content-between ">
                                             <div class="d-flex justify-content-between align-items-center gap-2">
-                                                <img src="./assests/images/userimg.jpg"
+                                                <img src="./assests/images/userimg.webp"
                                                     class="img-fluid align-self-center" alt="img">
                                             </div>
                                             <div class="d-flex gap-1">
@@ -451,7 +465,7 @@
                     <div class="row gy-3">
                         <div class="col-md-4">
                             <div class="content d-flex flex-column align-items-center gap-3">
-                                <img src="./assests/images/icon-marketing.png" class="img-fluid" alt="marketing">
+                                <img src="./assests/images/icon-marketing.webp" class="img-fluid" alt="marketing">
                                 <p class="m-0 text-center">
                                     From start to finish, WLVR will be there, ensuring your home reaches maximum
                                     potential revenue in a safe way
@@ -461,7 +475,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="content d-flex flex-column align-items-center gap-3">
-                                <img src="./assests/images/icon-home.png" class="img-fluid" alt="home">
+                                <img src="./assests/images/icon-home.webp" class="img-fluid" alt="home">
                                 <p class="m-0 text-center">
                                     From start to finish, WLVR will be there, ensuring your home reaches maximum
                                     potential revenue in a safe way
@@ -471,7 +485,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="content d-flex flex-column align-items-center gap-3">
-                                <img src="./assests/images/icon-luxury.png" class="img-fluid" alt="luxury">
+                                <img src="./assests/images/icon-luxury.webp" class="img-fluid" alt="luxury">
                                 <p class="m-0 text-center">
                                     From start to finish, WLVR will be there, ensuring your home reaches maximum
                                     potential revenue in a safe way
@@ -491,7 +505,7 @@
                         <h2 class="text-center">Featured Properties</h2>
                         <div class="col-md-6 ">
                             <div class="card position-relative justify-content-center align-items-center shadow">
-                                <img src="./assests/images/feature1.jpg" class="card-img-top" alt="">
+                                <img src="./assests/images/feature1.webp" class="card-img-top" alt="">
                                 <div
                                     class="card-body card-content w-85  text-white d-flex flex-column flex-lg-row align-items-center  justify-content-between">
                                     <h5 class="card-title fw-bold">Lola's Lakefront</h5>
@@ -502,7 +516,7 @@
                         </div>
                         <div class="col-md-6 ">
                             <div class="card position-relative justify-content-center align-items-center">
-                                <img src="./assests/images/feature2.jpg" class="card-img-top" alt="">
+                                <img src="./assests/images/feature2.webp" class="card-img-top" alt="">
                                 <div
                                     class="card-body card-content w-85  text-white  d-flex flex-column flex-lg-row align-items-center  justify-content-between">
                                     <h5 class="card-title fw-bold">Good Life</h5>
@@ -514,7 +528,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="card position-relative justify-content-center align-items-center">
-                                <img src="./assests/images/feature3.jpg" class="card-img-top" alt="">
+                                <img src="./assests/images/feature3.webp" class="card-img-top" alt="">
                                 <div
                                     class="card-body card-content w-85  text-white d-flex flex-column flex-lg-row align-items-center  justify-content-between">
                                     <h5 class="card-title fw-bold">Good Vibrations </h5>
@@ -526,7 +540,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="card position-relative justify-content-center align-items-center">
-                                <img src="./assests/images/feature4.jpg" class="card-img-top" alt="">
+                                <img src="./assests/images/feature4.webp" class="card-img-top" alt="">
                                 <div
                                     class="card-body card-content w-85  text-white d-flex flex-column flex-lg-row align-items-center  justify-content-between">
                                     <h5 class="card-title fw-bold">Lola's Lakefront</h5>
@@ -559,7 +573,7 @@
                         </div>
                         <!-- <div class="proud-members">
                             <h4 class="title text-capitalize">Proud Members Of</h4>
-                            <a href="#"><img src="./assests/images/verma.png" class="img-fluid" alt="VRMA Members"></a>
+                            <a href="#"><img src="./assests/images/verma.webp" class="img-fluid" alt="VRMA Members"></a>
                         </div> -->
                     </div>
                     <div class="col-md-4">
@@ -625,7 +639,7 @@
                 <div class="row py-5 gy-3 inner-footer rounded my-3 justify-content-around ">
                     <div class="col-md-4">
                         <div class="aboutcompony d-flex flex-column gap-3 align-items-start">
-                            <img src="./assests/images/verma.png" class="img-fluid" alt="compony-logo">
+                            <img src="./assests/images/verma.webp" class="img-fluid" alt="compony-logo">
                             <p class="m-0 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis autem dolorem
                                 vitae, labore eligendi molestias voluptatum optio eveniet fuga adipisci.</p>
                         </div>
@@ -684,6 +698,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="./js/bootstrap.bundle.js" defer></script>
 
 
@@ -737,6 +753,17 @@
                         spaceBetween: 30,
                     },
                 },
+            });
+        });
+    </script>
+      <script defer>
+        $(document).ready(function() {
+            $('#arrival ,#departure').datepicker({
+                dateFormat: 'yy-mm-dd'
+            });
+
+            $('.calendar').on('click', function() {
+                $('#arrival').focus();
             });
         });
     </script>
