@@ -1,509 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
-
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/contactus.css">
-    <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/team.css">
-    <style>
-        body{
-            padding-top: 120px !important;
-        }
-    </style>
-</head>
-
-
-<body>
-    <div class="container-fluid g-0">
-        <div class="wrapper">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+      <link rel="stylesheet" href="./css/bootstrap.min.css">
+      <link rel="stylesheet" href="./css/contactus.css">
+      <link rel="stylesheet" href="./css/about.css">
+      <link rel="stylesheet" href="./css/team.css">
+      <style>
+         body{
+         padding-top: 120px !important;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container-fluid g-0">
+         <div class="wrapper">
             <nav class="navbar navbar-expand-lg bg-linear text-white py-3 px-2 fixed-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand text-white" href="./home.html">
-                        <img src="./assests/images/logo.webp" class="img-fluid" alt="Logo">
-                    </a>
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end position-relative z-1" id="navbarNav">
-                        <ul class="navbar-nav gap-2 bg-sm-black align-items-center gy-3 py-4">
-                            <li class="nav-item">
-                                <a href="./home.html" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="vacationRentalsDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Vacation Rentals
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark bg-dark"
-                                    aria-labelledby="vacationRentalsDropdown">
-                                    <li><a class="dropdown-item " href="#">Rental 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Rental 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Rental 3</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="vacationPlanningDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Vacation Planning
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark bg-dark"
-                                    aria-labelledby="vacationPlanningDropdown">
-                                    <li><a class="dropdown-item" href="#">Planning 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Planning 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Planning 3</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./about.html" class="nav-link">About us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./contactus.html" class="nav-link">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+               <div class="container-fluid">
+                  <a class="navbar-brand text-white" href="./home.html">
+                  <img src="./assests/images/logo.webp" class="img-fluid" alt="Logo">
+                  </a>
+                  <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                     aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end position-relative z-1" id="navbarNav">
+                     <ul class="navbar-nav gap-2 bg-sm-black align-items-center gy-3 py-4">
+                        <li class="nav-item">
+                           <a href="./home.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" id="vacationRentalsDropdown" role="button"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                           Vacation Rentals
+                           </a>
+                           <ul class="dropdown-menu dropdown-menu-dark bg-dark"
+                              aria-labelledby="vacationRentalsDropdown">
+                              <li><a class="dropdown-item " href="#">Rental 1</a></li>
+                              <li><a class="dropdown-item" href="#">Rental 2</a></li>
+                              <li><a class="dropdown-item" href="#">Rental 3</a></li>
+                           </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" id="vacationPlanningDropdown" role="button"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                           Vacation Planning
+                           </a>
+                           <ul class="dropdown-menu dropdown-menu-dark bg-dark"
+                              aria-labelledby="vacationPlanningDropdown">
+                              <li><a class="dropdown-item" href="#">Planning 1</a></li>
+                              <li><a class="dropdown-item" href="#">Planning 2</a></li>
+                              <li><a class="dropdown-item" href="#">Planning 3</a></li>
+                           </ul>
+                        </li>
+                        <li class="nav-item">
+                           <a href="./about.html" class="nav-link">About us</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="./contactus.html" class="nav-link">Contact Us</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
             </nav>
             <div id="content" class="flex-grow-1">
-             
-                <section id="our-team" class="">
-                    <div class="container py-lg-5 py-3">
-                        <div class="row gy-3 justify-content-between align-items-start">
-                           <h1 class="mb-3">Our Teams</h1>
-                           <div class="col-md-8">
-                            <div class="row gy-3">
-                                <div class="col-md-4 col-sm-6 d-flex flex-column gap-3 align-items-center">
-                                    <div class="team-member-img position-relative">
-                                        <img src="/assests/images/lori.webp" class="img-fluid">
-                                        <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
-
-                                    </div>
-                                    <div class="team-info text-center">
-                                        <h2>Lori Goms</h2>
-                                        <p class="text-muted"> <em>Owner Success Manager</em></p>
-                                        <p class="text-muted">(512) 663-2864</p>
-                                        <a href="" class="text-decoration-none">Lori@walkervr.com</a>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 d-flex flex-column gap-3 align-items-center">
-                                    <div class="team-member-img position-relative">
-                                        <img src="/assests/images/amy-brooks.webp" class="img-fluid">
-                                        <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
-
-                                    </div>
-                                    <div class="team-info text-center">
-                                        <h2>Lori Goms</h2>
-                                        <p class="text-muted"> <em>Owner Success Manager</em></p>
-                                        <p class="text-muted">(512) 663-2864</p>
-                                        <a href="" class="text-decoration-none">Lori@walkervr.com</a>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-4  col-sm-6 d-flex flex-column gap-3 align-items-center">
-                                    <div class="team-member-img position-relative">
-                                        <img src="/assests/images/grace-profile-bio.webp" class="img-fluid">
-                                        <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
-
-                                    </div>
-                                    <div class="team-info text-center">
-                                        <h2>Lori Goms</h2>
-                                        <p class="text-muted"> <em>Owner Success Manager</em></p>
-                                        <p class="text-muted">(512) 663-2864</p>
-                                        <a href="" class="text-decoration-none">Lori@walkervr.com</a>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-4  col-sm-6 d-flex flex-column gap-3 align-items-center">
-                                    <div class="team-member-img position-relative">
-                                        <img src="/assests/images/jessica-683x1024.webp" class="img-fluid">
-                                        <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
-
-                                    </div>
-                                    <div class="team-info text-center">
-                                        <h2>Lori Goms</h2>
-                                        <p class="text-muted"> <em>Owner Success Manager</em></p>
-                                        <p class="text-muted">(512) 663-2864</p>
-                                        <a href="" class="text-decoration-none">Lori@walkervr.com</a>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-4  col-sm-6 d-flex flex-column gap-3 align-items-center">
-                                    <div class="team-member-img position-relative">
-                                        <img src="/assests/images/kevin-colis2.webp" class="img-fluid">
-                                        <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
-
-                                    </div>
-                                    <div class="team-info text-center">
-                                        <h2>Lori Goms</h2>
-                                        <p class="text-muted"> <em>Owner Success Manager</em></p>
-                                        <p class="text-muted">(512) 663-2864</p>
-                                        <a href="" class="text-decoration-none">Lori@walkervr.com</a>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 d-flex flex-column gap-3 align-items-center">
-                                    <div class="team-member-img position-relative">
-                                        <img src="/assests/images/beth-friedman.webp" class="img-fluid">
-                                        <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
-
-                                    </div>
-                                    <div class="team-info text-center">
-                                        <h2>Lori Goms</h2>
-                                        <p class="text-muted"> <em>Owner Success Manager</em></p>
-                                        <p class="text-muted">(512) 663-2864</p>
-                                        <a href="" class="text-decoration-none">Lori@walkervr.com</a>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 d-flex flex-column gap-3 align-items-center">
-                                    <div class="team-member-img position-relative">
-                                        <img src="/assests/images/genevieve-joseph-gladle.webp" class="img-fluid">
-                                        <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
-
-                                    </div>
-                                    <div class="team-info text-center">
-                                        <h2>Lori Goms</h2>
-                                        <p class="text-muted"> <em>Owner Success Manager</em></p>
-                                        <p class="text-muted">(512) 663-2864</p>
-                                        <a href="" class="text-decoration-none">Lori@walkervr.com</a>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 d-flex flex-column gap-3 align-items-center">
-                                    <div class="team-member-img position-relative">
-                                        <img src="/assests/images/mason-lively2-751x1024.webp" class="img-fluid">
-                                        <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
-
-                                    </div>
-                                    <div class="team-info text-center">
-                                        <h2>Lori Goms</h2>
-                                        <p class="text-muted"> <em>Owner Success Manager</em></p>
-                                        <p class="text-muted">(512) 663-2864</p>
-                                        <a href="" class="text-decoration-none">Lori@walkervr.com</a>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 d-flex flex-column gap-3 align-items-center">
-                                    <div class="team-member-img position-relative">
-                                        <img src="/assests/images/FINALMY1A7127-Edit-683x1024.webp" class="img-fluid">
-                                        <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
-
-                                    </div>
-                                    <div class="team-info text-center">
-                                        <h2>Lori Goms</h2>
-                                        <p class="text-muted"> <em>Owner Success Manager</em></p>
-                                        <p class="text-muted">(512) 663-2864</p>
-                                        <a href="" class="text-decoration-none">Lori@walkervr.com</a>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 d-flex flex-column gap-3 align-items-center">
-                                    <div class="team-member-img position-relative">
-                                        <img src="/assests/images/jr-melgar-683x1024.webp" class="img-fluid">
-                                        <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
-
-                                    </div>
-                                    <div class="team-info text-center">
-                                        <h2>Lori Goms</h2>
-                                        <p class="text-muted"> <em>Owner Success Manager</em></p>
-                                        <p class="text-muted">(512) 663-2864</p>
-                                        <a href="" class="text-decoration-none">Lori@walkervr.com</a>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 d-flex flex-column gap-3 align-items-center">
-                                    <div class="team-member-img position-relative">
-                                        <img src="/assests/images/2021-Sharon-3-1024x1536-1-683x1024.webp" class="img-fluid ">
-                                        <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
-
-                                    </div>
-                                    <div class="team-info text-center">
-                                        <h2>Lori Goms</h2>
-                                        <p class="text-muted"> <em>Owner Success Manager</em></p>
-                                        <p class="text-muted">(512) 663-2864</p>
-                                        <a href="" class="text-decoration-none">Lori@walkervr.com</a>
-
-                                    </div>
-                                </div>
-                               
-
-                            </div>
-                            
-                            
+               <section id="our-team" class="">
+                  <div class="container py-lg-5 py-3">
+                     <div class="row gy-3 justify-content-between align-items-start">
+                        <h1 class="mb-3">Our Teams</h1>
+                        <div class="col-md-8">
+                           <div class="row gy-3">
+                              <div class="col-md-4 col-sm-6 d-flex flex-column gap-3 align-items-center">
+                                 <div class="team-member-img position-relative">
+                                    <img src="/assests/images/lori.webp" class="img-fluid">
+                                    <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
+                                 </div>
+                                 <div class="team-info text-center">
+                                    <h2>Lori Goms</h2>
+                                    <p class="text-muted"> <em>Owner Success Manager</em></p>
+                                    <p class="text-muted">(512) 663-2864</p>
+                                    <a href="" class="text-decoration-none">Lori@walkervr.com</a>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 col-sm-6 d-flex flex-column gap-3 align-items-center">
+                                 <div class="team-member-img position-relative">
+                                    <img src="/assests/images/amy-brooks.webp" class="img-fluid">
+                                    <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
+                                 </div>
+                                 <div class="team-info text-center">
+                                    <h2>Lori Goms</h2>
+                                    <p class="text-muted"> <em>Owner Success Manager</em></p>
+                                    <p class="text-muted">(512) 663-2864</p>
+                                    <a href="" class="text-decoration-none">Lori@walkervr.com</a>
+                                 </div>
+                              </div>
+                              <div class="col-md-4  col-sm-6 d-flex flex-column gap-3 align-items-center">
+                                 <div class="team-member-img position-relative">
+                                    <img src="/assests/images/grace-profile-bio.webp" class="img-fluid">
+                                    <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
+                                 </div>
+                                 <div class="team-info text-center">
+                                    <h2>Lori Goms</h2>
+                                    <p class="text-muted"> <em>Owner Success Manager</em></p>
+                                    <p class="text-muted">(512) 663-2864</p>
+                                    <a href="" class="text-decoration-none">Lori@walkervr.com</a>
+                                 </div>
+                              </div>
+                              <div class="col-md-4  col-sm-6 d-flex flex-column gap-3 align-items-center">
+                                 <div class="team-member-img position-relative">
+                                    <img src="/assests/images/jessica-683x1024.webp" class="img-fluid">
+                                    <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
+                                 </div>
+                                 <div class="team-info text-center">
+                                    <h2>Lori Goms</h2>
+                                    <p class="text-muted"> <em>Owner Success Manager</em></p>
+                                    <p class="text-muted">(512) 663-2864</p>
+                                    <a href="" class="text-decoration-none">Lori@walkervr.com</a>
+                                 </div>
+                              </div>
+                              <div class="col-md-4  col-sm-6 d-flex flex-column gap-3 align-items-center">
+                                 <div class="team-member-img position-relative">
+                                    <img src="/assests/images/kevin-colis2.webp" class="img-fluid">
+                                    <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
+                                 </div>
+                                 <div class="team-info text-center">
+                                    <h2>Lori Goms</h2>
+                                    <p class="text-muted"> <em>Owner Success Manager</em></p>
+                                    <p class="text-muted">(512) 663-2864</p>
+                                    <a href="" class="text-decoration-none">Lori@walkervr.com</a>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 col-sm-6 d-flex flex-column gap-3 align-items-center">
+                                 <div class="team-member-img position-relative">
+                                    <img src="/assests/images/beth-friedman.webp" class="img-fluid">
+                                    <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
+                                 </div>
+                                 <div class="team-info text-center">
+                                    <h2>Lori Goms</h2>
+                                    <p class="text-muted"> <em>Owner Success Manager</em></p>
+                                    <p class="text-muted">(512) 663-2864</p>
+                                    <a href="" class="text-decoration-none">Lori@walkervr.com</a>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 col-sm-6 d-flex flex-column gap-3 align-items-center">
+                                 <div class="team-member-img position-relative">
+                                    <img src="/assests/images/genevieve-joseph-gladle.webp" class="img-fluid">
+                                    <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
+                                 </div>
+                                 <div class="team-info text-center">
+                                    <h2>Lori Goms</h2>
+                                    <p class="text-muted"> <em>Owner Success Manager</em></p>
+                                    <p class="text-muted">(512) 663-2864</p>
+                                    <a href="" class="text-decoration-none">Lori@walkervr.com</a>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 col-sm-6 d-flex flex-column gap-3 align-items-center">
+                                 <div class="team-member-img position-relative">
+                                    <img src="/assests/images/mason-lively2-751x1024.webp" class="img-fluid">
+                                    <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
+                                 </div>
+                                 <div class="team-info text-center">
+                                    <h2>Lori Goms</h2>
+                                    <p class="text-muted"> <em>Owner Success Manager</em></p>
+                                    <p class="text-muted">(512) 663-2864</p>
+                                    <a href="" class="text-decoration-none">Lori@walkervr.com</a>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 col-sm-6 d-flex flex-column gap-3 align-items-center">
+                                 <div class="team-member-img position-relative">
+                                    <img src="/assests/images/FINALMY1A7127-Edit-683x1024.webp" class="img-fluid">
+                                    <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
+                                 </div>
+                                 <div class="team-info text-center">
+                                    <h2>Lori Goms</h2>
+                                    <p class="text-muted"> <em>Owner Success Manager</em></p>
+                                    <p class="text-muted">(512) 663-2864</p>
+                                    <a href="" class="text-decoration-none">Lori@walkervr.com</a>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 col-sm-6 d-flex flex-column gap-3 align-items-center">
+                                 <div class="team-member-img position-relative">
+                                    <img src="/assests/images/jr-melgar-683x1024.webp" class="img-fluid">
+                                    <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
+                                 </div>
+                                 <div class="team-info text-center">
+                                    <h2>Lori Goms</h2>
+                                    <p class="text-muted"> <em>Owner Success Manager</em></p>
+                                    <p class="text-muted">(512) 663-2864</p>
+                                    <a href="" class="text-decoration-none">Lori@walkervr.com</a>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 col-sm-6 d-flex flex-column gap-3 align-items-center">
+                                 <div class="team-member-img position-relative">
+                                    <img src="/assests/images/2021-Sharon-3-1024x1536-1-683x1024.webp" class="img-fluid ">
+                                    <i class="fa-brands fa-linkedin-in profile" title="LinkedIn"></i>
+                                 </div>
+                                 <div class="team-info text-center">
+                                    <h2>Lori Goms</h2>
+                                    <p class="text-muted"> <em>Owner Success Manager</em></p>
+                                    <p class="text-muted">(512) 663-2864</p>
+                                    <a href="" class="text-decoration-none">Lori@walkervr.com</a>
+                                 </div>
+                              </div>
                            </div>
-                           <div class="col-md-4">
-                              
-                            <div class="card shadow py-4 ">
-                                <h4 class="text-center mb-3">Search Our Rentals</h4>
-                                <form class="form my-2 ">
-                                    <div class="row mx-1 gy-3 justify-content-between align-items-center">
-                                        <div class="col-6">
-                                            <div class="position-relative">
-                                                <input type="text" id="arrival" autocomplete="off"   class="form-control " tabindex="1"
-                                                    placeholder="Arrival">
-                                                    <i class="fa-solid fa-calendar-days calendar "></i>
-        
-                                            </div>
-
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="position-relative">
-                                                <input type="text" id="departure" autocomplete="off"   class="form-control " tabindex="1"
-                                                    placeholder="Departure">
-                                                    <i class="fa-solid fa-calendar-days calendar "></i>
-        
-                                            </div>
-
-                                        </div>
-                                        <div class="col-12">
-                                            <select class="form-select " aria-label="Default select example">
-                                                <option selected>Occupancy</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-
-                                        </div>
-                                        <div class=" col-12">
-                                            <select class="form-select " aria-label="Default select example">
-                                                <option selected>Destination</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-
-                                        </div>
-                                        <div class=" col-12">
-                                            <button type="submit" class="btn btn-search w-100 ">Search</button>
-
-                                        </div>
-
-
+                        </div>
+                        <div class="col-md-4">
+                           <div class="card shadow py-4 ">
+                              <h4 class="text-center mb-3">Search Our Rentals</h4>
+                              <form class="form my-2 ">
+                                 <div class="row mx-1 gy-3 justify-content-between align-items-center">
+                                    <div class="col-6">
+                                       <div class="position-relative">
+                                          <input type="text" id="arrival" autocomplete="off"   class="form-control " tabindex="1"
+                                             placeholder="Arrival">
+                                          <i class="fa-solid fa-calendar-days calendar "></i>
+                                       </div>
                                     </div>
-
-
-
-
-                                </form>
-
-                            </div>
+                                    <div class="col-6">
+                                       <div class="position-relative">
+                                          <input type="text" id="departure" autocomplete="off"   class="form-control " tabindex="1"
+                                             placeholder="Departure">
+                                          <i class="fa-solid fa-calendar-days calendar "></i>
+                                       </div>
+                                    </div>
+                                    <div class="col-12">
+                                       <select class="form-select " aria-label="Default select example">
+                                          <option selected>Occupancy</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                       </select>
+                                    </div>
+                                    <div class=" col-12">
+                                       <select class="form-select " aria-label="Default select example">
+                                          <option selected>Destination</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                       </select>
+                                    </div>
+                                    <div class=" col-12">
+                                       <button type="submit" class="btn btn-search w-100 ">Search</button>
+                                    </div>
+                                 </div>
+                              </form>
+                           </div>
                         </div>
-                        </div>
-
-                    </div>
-
-
-                </section>
-            
-              
-
-            
-
+                     </div>
+                  </div>
+               </section>
             </div>
-
-
             <section class="footer py-lg-4 py-1 text-white overflow-hidden">
-                <footer class="container py-5">
-                    <div class="row gy-3">
-                        <div class="col-md-4 text-white d-flex flex-column gap-3">
-                            <div class="contact">
-                                <h4 class="title">Contact Us</h4>
-                                <p class="mb-0">Walker Luxury Vacation Rentals</p>
-                                <p class="mb-0">PO Box 163065</p>
-                                <p class="mb-0">Austin, TX 78716</p>
-                                <p>Phone: <a href="#">512-501-3580</a></p>
-
-                            </div>
-                            <!-- <div class="proud-members">
-                             <h4 class="title text-capitalize">Proud Members Of</h4>
-                             <a href="#"><img src="./assests/images/verma.png" class="img-fluid" alt="VRMA Members"></a>
-                         </div> -->
+               <footer class="container py-5">
+                  <div class="row gy-3">
+                     <div class="col-md-4 text-white d-flex flex-column gap-3">
+                        <div class="contact">
+                           <h4 class="title">Contact Us</h4>
+                           <p class="mb-0">Walker Luxury Vacation Rentals</p>
+                           <p class="mb-0">PO Box 163065</p>
+                           <p class="mb-0">Austin, TX 78716</p>
+                           <p>Phone: <a href="#">512-501-3580</a></p>
                         </div>
-                        <div class="col-md-4">
-                            <div class="quick-links">
-                                <h4 class="title">Quick Links</h4>
-                                <ul class="list-unstyled d-flex flex-column gap-3">
-                                    <li class=""><a href="#">Home</a></li>
-
-                                    <li class=""><a href="#" target="_blank" rel="noopener">Guest Portal</a></li>
-                                    <li class=""><a href="#" target="_blank" rel="noopener">Owner Login</a></li>
-                                    <li class=""><a href="#">About Us</a></li>
-                                    <li class=""><a href="#">Sitemap</a></li>
-                                </ul>
-                            </div>
-
+                        <!-- <div class="proud-members">
+                           <h4 class="title text-capitalize">Proud Members Of</h4>
+                           <a href="#"><img src="./assests/images/verma.png" class="img-fluid" alt="VRMA Members"></a>
+                           </div> -->
+                     </div>
+                     <div class="col-md-4">
+                        <div class="quick-links">
+                           <h4 class="title">Quick Links</h4>
+                           <ul class="list-unstyled d-flex flex-column gap-3">
+                              <li class=""><a href="#">Home</a></li>
+                              <li class=""><a href="#" target="_blank" rel="noopener">Guest Portal</a></li>
+                              <li class=""><a href="#" target="_blank" rel="noopener">Owner Login</a></li>
+                              <li class=""><a href="#">About Us</a></li>
+                              <li class=""><a href="#">Sitemap</a></li>
+                           </ul>
                         </div>
-                        <div class="col-md-4">
-
-                            <div class="row">
-                                <div class="col-md-8 col-9  d-flex flex-column gap-3">
-                                    <h4 class="title text-capitalize">Find property by name</h4>
-                                    <select class="form-select">
-                                        <option value="/">- Choose -</option>
-                                        <option>Always on my Mind</option>
-                                        <option>Beautiful Day</option>
-                                        <option>Daniel House</option>
-                                        <option>French Polo Estate</option>
-                                        <option>Good Life</option>
-                                        <option>Good Vibrations</option>
-                                        <option>Here Comes the Sun</option>
-                                        <option>Hill Country Hideaway</option>
-                                        <option>Isnt She Lovely</option>
-                                        <option>Lake Austin Modern</option>
-                                        <option>Lake Austin Retreat</option>
-                                        <option>Lake Travis Escape</option>
-                                        <option>Loft On Congress</option>
-                                        <option>Lola's Lakefront</option>
-                                        <option>Send The Light</option>
-                                        <option>Skyhurst</option>
-                                        <option>Soak Up The Sun</option>
-                                        <option>Some Kind of Wonderful</option>
-                                        <option>South Congress Custom House</option>
-                                        <option>Southside of Heaven</option>
-                                        <option>Stairway to Heaven</option>
-                                        <option>Sundown Escape</option>
-                                        <option>Taking in the View</option>
-                                        <option>The Owners House</option>
-                                        <option>Westlake Hills Designer</option>
-                                        <option>Windwalker Ranch</option>
-                                        <option>Wish You Were Here</option>
-                                    </select>
-
-                                    </span>
-                                </div>
-                                <a href="#" rel="botton"><img
-                                        src="https://www.walkervr.com/wp-content/uploads/2023/06/Vrbo-VHOTY-Badge_2023_Arctic-Fjord.png"
-                                        class="awardImg" width="100" height="100" alt="Vacation home of the year 2023"
-                                        title="Vacation home of the year 2023"></a>
-                            </div>
-
+                     </div>
+                     <div class="col-md-4">
+                        <div class="row">
+                           <div class="col-md-8 col-9  d-flex flex-column gap-3">
+                              <h4 class="title text-capitalize">Find property by name</h4>
+                              <select class="form-select">
+                                 <option value="/">- Choose -</option>
+                                 <option>Always on my Mind</option>
+                                 <option>Beautiful Day</option>
+                                 <option>Daniel House</option>
+                                 <option>French Polo Estate</option>
+                                 <option>Good Life</option>
+                                 <option>Good Vibrations</option>
+                                 <option>Here Comes the Sun</option>
+                                 <option>Hill Country Hideaway</option>
+                                 <option>Isnt She Lovely</option>
+                                 <option>Lake Austin Modern</option>
+                                 <option>Lake Austin Retreat</option>
+                                 <option>Lake Travis Escape</option>
+                                 <option>Loft On Congress</option>
+                                 <option>Lola's Lakefront</option>
+                                 <option>Send The Light</option>
+                                 <option>Skyhurst</option>
+                                 <option>Soak Up The Sun</option>
+                                 <option>Some Kind of Wonderful</option>
+                                 <option>South Congress Custom House</option>
+                                 <option>Southside of Heaven</option>
+                                 <option>Stairway to Heaven</option>
+                                 <option>Sundown Escape</option>
+                                 <option>Taking in the View</option>
+                                 <option>The Owners House</option>
+                                 <option>Westlake Hills Designer</option>
+                                 <option>Windwalker Ranch</option>
+                                 <option>Wish You Were Here</option>
+                              </select>
+                              </span>
+                           </div>
+                           <a href="#" rel="botton"><img
+                              src="https://www.walkervr.com/wp-content/uploads/2023/06/Vrbo-VHOTY-Badge_2023_Arctic-Fjord.png"
+                              class="awardImg" width="100" height="100" alt="Vacation home of the year 2023"
+                              title="Vacation home of the year 2023"></a>
                         </div>
-                    </div>
-                    <div class="row py-5 gy-3 inner-footer rounded my-3 justify-content-around ">
-                        <div class="col-md-4">
-                            <div class="aboutcompony d-flex flex-column gap-3 align-items-start">
-                                <img src="./assests/images/verma.webp" class="img-fluid" alt="compony-logo">
-                                <p class="m-0 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis autem
-                                    dolorem
-                                    vitae, labore eligendi molestias voluptatum optio eveniet fuga adipisci.</p>
-                            </div>
+                     </div>
+                  </div>
+                  <div class="row py-5 gy-3 inner-footer rounded my-3 justify-content-around ">
+                     <div class="col-md-4">
+                        <div class="aboutcompony d-flex flex-column gap-3 align-items-start">
+                           <img src="./assests/images/verma.webp" class="img-fluid" alt="compony-logo">
+                           <p class="m-0 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis autem
+                              dolorem
+                              vitae, labore eligendi molestias voluptatum optio eveniet fuga adipisci.
+                           </p>
                         </div>
-                        <div class="col-md-8 d-flex justify-content-md-end d-none d-md-flex">
-                            <div class="subscribe ">
-                                <h4 class="text-capitalize text-center">subscribe to our newsletter</h4>
-                                <form>
-                                    <div class="position-relative">
-
-                                        <input type="email" class="form-control inputsbs " placeholder="xyz@gmail.com"
-                                            id="" aria-describedby="emailHelp">
-                                        <a class="text-decoration-none sbscribe"><i
-                                                class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
-                                    </div>
-
-
-                                </form>
-                            </div>
-
+                     </div>
+                     <div class="col-md-8 d-flex justify-content-md-end d-none d-md-flex">
+                        <div class="subscribe ">
+                           <h4 class="text-capitalize text-center">subscribe to our newsletter</h4>
+                           <form>
+                              <div class="position-relative">
+                                 <input type="email" class="form-control inputsbs " placeholder="xyz@gmail.com"
+                                    id="" aria-describedby="emailHelp">
+                                 <a class="text-decoration-none sbscribe"><i
+                                    class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
+                              </div>
+                           </form>
                         </div>
-                        <hr class="w-100">
-                        <div class="policies">
-                            <ul class="d-flex flex-column flex-md-row gap-3 list-unstyled ">
-                                <li> <a class="">Terms of use</a></li>
-                                <li> <a class="border-">Privacy & Cockies</a></li>
-                                <li><a class="">Terms & Conditions</a></li>
-                            </ul>
-
+                     </div>
+                     <hr class="w-100">
+                     <div class="policies">
+                        <ul class="d-flex flex-column flex-md-row gap-3 list-unstyled ">
+                           <li> <a class="">Terms of use</a></li>
+                           <li> <a class="border-">Privacy & Cockies</a></li>
+                           <li><a class="">Terms & Conditions</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="copywrite d-flex flex-wrap justify-content-between mt-4 gap-3">
+                     <p class="m-0">© 2024 Walker Luxury Vacation Rentals All rights reserved.</p>
+                     <div class="social d-flex align-items-center gap-3">
+                        <span>Follow us : </span>
+                        <div class="social-icons d-flex gap-3">
+                           <i class="fa-brands fa-facebook-f " title="facebook"></i>
+                           <i class="fa-brands fa-instagram" title="Instagram"></i>
+                           <i class="fa-brands fa-x-twitter " title="X"></i>
+                           <i class="fa-brands fa-linkedin-in" title="LinkedIn"></i>
                         </div>
-
-                    </div>
-                    <div class="copywrite d-flex flex-wrap justify-content-between mt-4 gap-3">
-                        <p class="m-0">© 2024 Walker Luxury Vacation Rentals All rights reserved.</p>
-                        <div class="social d-flex align-items-center gap-3">
-                            <span>Follow us : </span>
-                            <div class="social-icons d-flex gap-3">
-                                <i class="fa-brands fa-facebook-f " title="facebook"></i>
-                                <i class="fa-brands fa-instagram" title="Instagram"></i>
-                                <i class="fa-brands fa-x-twitter " title="X"></i>
-                                <i class="fa-brands fa-linkedin-in" title="LinkedIn"></i>
-                            </div>
-                        </div>
-                    </div>
+                     </div>
+                  </div>
             </section>
-
-        </div>
-
-
-    </div>
-
-
-
-
-
-    </footer>
-    </section>
-
-
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" ></script>
-    <script src="./js/bootstrap.bundle.js" defer></script>
-
-
-   
+         </div>
+      </div>
+      </footer>
+      </section>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" ></script>
+      <script src="./js/bootstrap.bundle.js" defer></script>
       <script defer>
-        $(document).ready(function() {
-            $('#arrival ,#departure').datepicker({
-                dateFormat: 'yy-mm-dd'
-            });
-
-            $('.calendar').on('click', function() {
-                $('#arrival').focus();
-            });
-        });
-    </script>
-
-
-
-    <script defer>
-        document.addEventListener('DOMContentLoaded', () => {
-            const navbar = document.querySelector('.navbar');
-            let lastScrollTop = 0;
-
-            window.addEventListener('scroll', () => {
-                const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-                if (currentScroll > lastScrollTop) {
-
-                    navbar.classList.add('navbar-hidden');
-                } else {
-
-                    navbar.classList.remove('navbar-hidden');
-                }
-
-                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-            });
-        });
-    </script>
-
-
-
-
-</body>
-
+         $(document).ready(function() {
+             $('#arrival ,#departure').datepicker({
+                 dateFormat: 'yy-mm-dd'
+             });
+         
+             $('.calendar').on('click', function() {
+                 $('#arrival').focus();
+             });
+         });
+      </script>
+      <script defer>
+         document.addEventListener('DOMContentLoaded', () => {
+             const navbar = document.querySelector('.navbar');
+             let lastScrollTop = 0;
+         
+             window.addEventListener('scroll', () => {
+                 const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+         
+                 if (currentScroll > lastScrollTop) {
+         
+                     navbar.classList.add('navbar-hidden');
+                 } else {
+         
+                     navbar.classList.remove('navbar-hidden');
+                 }
+         
+                 lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+             });
+         });
+      </script>
+   </body>
 </html>

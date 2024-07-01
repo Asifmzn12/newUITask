@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #684f2c;
+    --secondry-color: #f3eee4;
+    --white-color: #ffffff;
+    --footer-color: #000;
+    --border-color: #dee2e6;
+    --primary-button-hover: #49351a;
+  }
+  .card{
+    border: 0px;
+  }
+.card-content {
+
+
+     color: #000 !important;
+     position: relative;
+     opacity: .9;
+      z-index: 0;
+    border-radius: 8px;
+       
+       
+   
+   }
+
+#items .card {
+    transition: all 0.3s ease-in;
+}
+
+#items .card img {
+    opacity: 0.85;
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+    position: 99999;
+  
+}
+
+#items .card:hover img {
+    opacity: 1;
+}
+.star i{
+    color: var(--primary-color);
+}
+.hero-section{
+    height: 300px !important;
+}
+.container-wrapper{
+top: 70% !important ;
+
+}

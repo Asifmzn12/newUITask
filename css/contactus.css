@@ -241,6 +241,18 @@ form .sbscribe {
 .policies li a {
   transition: all 0.3s ease-in;
 }
+.direction i{
+  color:#1877f2;
+  rotate: 330deg;
+}
+.direction{
+  color: var(--primary-color) !important;
+  transition: all 0.2s ease-in;
+}
+.direction:hover{
+  text-decoration: underline !important;
+}
+
 .quick-links li a:hover,
 .policies li a:hover {
   text-decoration: underline !important;

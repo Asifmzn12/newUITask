@@ -489,7 +489,9 @@ form .sbscribe{
     width: 85%;
 }
 
-
+.star i{
+    color:var(--primary-color);
+}
 
 /* Transitions */
 .card {
