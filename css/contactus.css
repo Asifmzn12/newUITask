@@ -7,6 +7,8 @@
   --footer-color: #000;
   --border-color: #dee2e6;
   --primary-button-hover: #49351a;
+  --anchor-hover:#f0c990;
+
 }
 
 * {
@@ -31,14 +33,23 @@ body {
   flex-grow: 1; /* This makes the content area grow to fill available space */
 }
 
-
 /* Navbar Css */
 .bg-linear {
-    background: linear-gradient(rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.2) 100%, transparent);
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 0, 0, 0.2) 100%,
+    transparent
+  );
 }
 .navbar-hidden {
   transform: translateY(-100%);
   transition: transform 0.3s ease;
+}
+.nav-item a {
+  transition: all 0.2s ease-in;
+}
+.nav-item a:hover{
+  color: var(--anchor-hover)  !important;
 }
 
 .nav-item > .nav-link {
@@ -72,17 +83,14 @@ body {
   margin-block: 10px;
 }
 
-
-.hero-section{
-    background:var(--primary-color);
-    height: 600px;
-    color: #fff;
-    position: relative;
-   
-
+.hero-section {
+  background: var(--primary-color);
+  height: 600px;
+  color: #fff;
+  position: relative;
 }
-#formcontainer{
-    background-color: rgba(247, 247, 247, 1) !important;
+#formcontainer {
+  background-color: rgba(247, 247, 247, 1) !important;
 }
 .calendar {
   position: absolute;
@@ -94,40 +102,35 @@ body {
   z-index: 9999;
 }
 .map-iframe {
-    width: 100%;
-    height: 380px;
-    border: none;
+  width: 100%;
+  height: 380px;
+  border: none;
 }
 
-
-
-    .hero-section .container-wrapper{
-    position: absolute;
-    left: 50%;
-    top: 58%;
-    transform: translate(-50%,-50%);
+.hero-section .container-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 58%;
+  transform: translate(-50%, -50%);
 }
-.hero-img img{
-    max-width: 350px;
+.hero-img img {
+  max-width: 350px;
 }
 
-
-#our-offices .card img{
-   
-        aspect-ratio: 16 / 9;
-
+#our-offices .card img {
+  aspect-ratio: 16 / 9;
 }
 .card {
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .card-img-top {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 .card:hover .card-img-top {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* Form Css */
@@ -164,23 +167,25 @@ form .sbscribe {
   top: 16px;
   font-weight: 600;
 }
-.form-control:focus,.form-select:focus{
-    box-shadow: none !important;
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none !important;
 }
-.form-control,.form-select{
+.form-control,
+.form-select {
   padding-block: 15px !important;
 }
 .btn-search {
-    background: var(--primary-color);
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: 600;
-    transition: all 0.3s ease-in;
-    padding-block: 15px;
+  background: var(--primary-color);
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+  padding-block: 15px;
 }
-.btn-search:hover{
-    background-color: var(--primary-button-hover) !important;
-    color: var(--white-color) !important;
+.btn-search:hover {
+  background-color: var(--primary-button-hover) !important;
+  color: var(--white-color) !important;
 }
 
 .policies ul li a {
@@ -241,15 +246,15 @@ form .sbscribe {
 .policies li a {
   transition: all 0.3s ease-in;
 }
-.direction i{
-  color:#1877f2;
+.direction i {
+  color: #1877f2;
   rotate: 330deg;
 }
-.direction{
+.direction {
   color: var(--primary-color) !important;
   transition: all 0.2s ease-in;
 }
-.direction:hover{
+.direction:hover {
   text-decoration: underline !important;
 }
 
@@ -279,7 +284,7 @@ form .sbscribe {
     visibility: visible;
     max-height: 300px;
   }
-  .ContactCards{
+  .ContactCards {
     margin-top: -80px;
   }
 }
@@ -296,10 +301,9 @@ form .sbscribe {
   .navbar-brand img {
     width: 210px;
   }
-  .hero-img img{
+  .hero-img img {
     max-width: 280px;
-}
+  }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1240px) {
-}
+

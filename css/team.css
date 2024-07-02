@@ -5,6 +5,14 @@
     --footer-color: #000;
     --border-color: #dee2e6;
     --primary-button-hover: #49351a;
+    --anchor-hover:#f0c990;
+
+  }
+  .nav-item a {
+    transition: all 0.2s ease-in;
+  }
+  .nav-item a:hover{
+    color: var(--anchor-hover)  !important;
   }
   *{
     padding: 0;
