@@ -12,6 +12,8 @@
          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
          crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link  rel="preconnect" rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
       <link rel="stylesheet" href="./css/bootstrap.min.css">
       <link rel="stylesheet" href="./css/contactus.css">
    </head>
@@ -64,12 +66,13 @@
                      </div>
                   </div>
                </div>
-               <div class="ContactCards">
+               <div class="ContactCards"  style="overflow-x: hidden">
                   <div class="container py-4">
                      <div class="row gy-3">
-                        <div class="col-md-6 d-flex ">
+                        <div class="col-md-6 d-flex "  data-aos="fade-right"
+                        data-aos-duration="3000">
                            <div class="card bg-transparent border-0">
-                              <div class="card-body d-flex flex-column gap-5 justify-content-center ">
+                              <div class="card-body d-flex flex-column gap-md-5 gap-3 justify-content-center ">
                                  <h1 class="fw-medium">Get in touch with us</h1>
                                  <div class="d-flex align-items-center">
                                     <i class="fa-solid fa-envelope fa-2xl me-4"></i>
@@ -88,7 +91,8 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6"  data-aos="fade-left"
+                        data-aos-duration="3000">
                            <div class="card shadow p-4">
                               <h4 class="text-center mb-3 text-capitalize">Fill The form for more details</h4>
                               <form class="form my-2 ">
@@ -131,10 +135,11 @@
                      </div>
                   </div>
                </div>
-               <section id="formcontainer">
+               <section id="formcontainer" style="overflow-x: hidden;">
                   <div class="container py-lg-5 py-3">
                      <div class="row gy-2">
-                        <div class="col-md-6">
+                        <div class="col-md-6"  data-aos="fade-right"
+                        data-aos-duration="3000" >
                            <div class="card shadow py-4 ">
                               <h4 class="text-center mb-3">Search Our Rentals</h4>
                               <form class="form my-2 ">
@@ -176,7 +181,8 @@
                               </form>
                            </div>
                         </div>
-                        <div class="col-md-6 d-lg-block d-none">
+                        <div class="col-md-6 d-lg-block d-none"  data-aos="fade-left"
+                        data-aos-duration="3000">
                            <iframe class="map-iframe"
                               src="https://www.openstreetmap.org/export/embed.html?bbox=-0.1357%2C51.5227%2C-0.1057%2C51.5327&amp;layer=mapnik"
                               style="border: 1px solid black"></iframe>
@@ -186,9 +192,11 @@
                </section>
                <section id="our-offices">
                   <div class="container py-lg-5 py-4">
-                     <h1 class="mb-md-4 mb-3">Our Offices</h1>
+                     <h1 class="mb-md-4 mb-3"  data-aos="fade-down"
+                     data-aos-duration="3000">Our Offices</h1>
                      <div class="row gy-3">
-                        <div class="col-md-4 col-lg-3 d-flex">
+                        <div class="col-md-4 col-lg-3 d-flex"  data-aos="fade-up"
+                        data-aos-duration="3000">
                            <div class="card shadow">
                               <img src="./assests/images/office1.webp" class="card-img-top" alt="...">
                               <div class="card-body">
@@ -205,7 +213,8 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 d-flex">
+                        <div class="col-md-4 col-lg-3 d-flex"  data-aos="fade-up"
+                        data-aos-duration="3000">
                            <div class="card shadow">
                               <img src="./assests/images/office2.webp" class="card-img-top" alt="...">
                               <div class="card-body">
@@ -222,7 +231,8 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 d-flex">
+                        <div class="col-md-4 col-lg-3 d-flex"  data-aos="fade-up"
+                        data-aos-duration="3000">
                            <div class="card shadow">
                               <img src="./assests/images/office3.webp" class="card-img-top" alt="...">
                               <div class="card-body">
@@ -239,7 +249,8 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 d-flex ">
+                        <div class="col-md-4 col-lg-3 d-flex "  data-aos="fade-up"
+                        data-aos-duration="3000">
                            <div class="card shadow">
                               <img src="./assests/images/office4.webp" class="card-img-top" alt="...">
                               <div class="card-body">
@@ -264,7 +275,7 @@
                <footer class="container py-5">
                   <div class="row gy-3">
                      <div class="col-md-4 text-white d-flex flex-column gap-3">
-                        <div class="contact">
+                        <div class="contact d-flex flex-column gap-2">
                            <h4 class="title">Contact Us</h4>
                            <p class="mb-0">Walker Luxury Vacation Rentals</p>
                            <p class="mb-0">PO Box 163065</p>
@@ -290,7 +301,7 @@
                      </div>
                      <div class="col-md-4">
                         <div class="row">
-                           <div class="col-md-8 col-9  d-flex flex-column gap-3">
+                           <div class="col-sm-8 col-12  d-flex flex-column gap-3">
                               <h4 class="title text-capitalize">Find property by name</h4>
                               <select class="form-select">
                                  <option value="/">- Choose -</option>
@@ -325,7 +336,7 @@
                               </span>
                            </div>
                            <a href="#" rel="botton"><img
-                              src="https://www.walkervr.com/wp-content/uploads/2023/06/Vrbo-VHOTY-Badge_2023_Arctic-Fjord.png"
+                              src="./assests/images/Vrbo-VHOTY-Badge_2023_Arctic-Fjord.webp"
                               class="awardImg" width="100" height="100" alt="Vacation home of the year 2023"
                               title="Vacation home of the year 2023"></a>
                         </div>
@@ -381,39 +392,17 @@
       </footer>
       </section>
       </div>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script defer src="./js/index.js"></script>
+
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
       <script src="./js/bootstrap.bundle.js" defer></script>
-      <script defer>
-         $(document).ready(function() {
-             $('#arrival ,#departure').datepicker({
-                 dateFormat: 'yy-mm-dd'
-             });
-         
-             $('.calendar').on('click', function() {
-                 $('#arrival').focus();
-             });
-         });
+      <script>
+         AOS.init();
       </script>
-      <script defer>
-         document.addEventListener('DOMContentLoaded', () => {
-             const navbar = document.querySelector('.navbar');
-             let lastScrollTop = 0; 
-         
-             window.addEventListener('scroll', () => {
-                 const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-         
-                 if (currentScroll > lastScrollTop) {
-               
-                     navbar.classList.add('navbar-hidden');
-                 } else {
-                  
-                     navbar.classList.remove('navbar-hidden');
-                 }
-         
-                 lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
-             });
-         });
-      </script>
+       <script defer src="./js/datepicker.js"></script>
+
+    
    </body>
 </html>

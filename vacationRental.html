@@ -12,6 +12,8 @@
          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
          crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
       <link rel="stylesheet" href="./css/bootstrap.min.css">
       <link rel="stylesheet" href="./css/contactus.css">
       <link rel="stylesheet" href="./css/about.css">
@@ -145,8 +147,10 @@
                <section id="items" class="feature-products py-5 overflow-hidden">
                   <div class="container">
                      <div class="row me-1 ms-1 gy-4 justify-content-start align-items-center">
-                        <h2 class="text-center">Featured Properties</h2>
-                        <div class="col-md-6 col-lg-4 ">
+                        <h2 class="text-center"  data-aos="fade-left"
+                        data-aos-duration="3000">Featured Properties</h2>
+                        <div class="col-md-6 col-lg-4 "  data-aos="fade-up"
+                        data-aos-duration="3000">
                            <div class="card position-relative justify-content-start align-items-start ">
                               <img src="./assests/images/feature1.webp" class="card-img-top" alt="">
                               <div
@@ -167,7 +171,8 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 ">
+                        <div class="col-md-6 col-lg-4 "  data-aos="fade-up"
+                        data-aos-duration="3000">
                            <div class="card position-relative justify-content-start align-items-start ">
                               <img src="./assests/images/feature2.webp" class="card-img-top" alt="">
                               <div
@@ -188,7 +193,8 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 ">
+                        <div class="col-md-6 col-lg-4 "  data-aos="fade-up"
+                        data-aos-duration="3000">
                            <div class="card position-relative justify-content-start align-items-start ">
                               <img src="./assests/images/feature3.webp" class="card-img-top" alt="">
                               <div
@@ -209,7 +215,8 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 ">
+                        <div class="col-md-6 col-lg-4"  data-aos="fade-up"
+                        data-aos-duration="3000">
                            <div class="card position-relative justify-content-start align-items-start ">
                               <img src="./assests/images/feature4.webp" class="card-img-top" alt="">
                               <div
@@ -230,7 +237,8 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 ">
+                        <div class="col-md-6 col-lg-4"  data-aos="fade-up"
+                        data-aos-duration="3000">
                            <div class="card position-relative justify-content-start align-items-start ">
                               <img src="./assests/images/feature1.webp" class="card-img-top" alt="">
                               <div
@@ -251,7 +259,8 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 ">
+                        <div class="col-md-6 col-lg-4"  data-aos="fade-up"
+                        data-aos-duration="3000">
                            <div class="card position-relative justify-content-start align-items-start ">
                               <img src="./assests/images/feature2.webp" class="card-img-top" alt="">
                               <div
@@ -280,7 +289,7 @@
                <footer class="container py-5">
                   <div class="row gy-3">
                      <div class="col-md-4 text-white d-flex flex-column gap-3">
-                        <div class="contact">
+                        <div class="contact d-flex flex-column gap-2">
                            <h4 class="title">Contact Us</h4>
                            <p class="mb-0">Walker Luxury Vacation Rentals</p>
                            <p class="mb-0">PO Box 163065</p>
@@ -306,7 +315,7 @@
                      </div>
                      <div class="col-md-4">
                         <div class="row">
-                           <div class="col-md-8 col-9  d-flex flex-column gap-3">
+                           <div class="col-sm-8 col-12  d-flex flex-column gap-3">
                               <h4 class="title text-capitalize">Find property by name</h4>
                               <select class="form-select">
                                  <option value="/">- Choose -</option>
@@ -341,7 +350,7 @@
                               </span>
                            </div>
                            <a href="#" rel="botton"><img
-                              src="https://www.walkervr.com/wp-content/uploads/2023/06/Vrbo-VHOTY-Badge_2023_Arctic-Fjord.png"
+                              src="./assests/images/Vrbo-VHOTY-Badge_2023_Arctic-Fjord.webp"
                               class="awardImg" width="100" height="100" alt="Vacation home of the year 2023"
                               title="Vacation home of the year 2023"></a>
                         </div>
@@ -397,39 +406,16 @@
       </footer>
       </section>
       </div>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
+       <script defer src="./js/index.js"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
       <script src="./js/bootstrap.bundle.js" defer></script>
-      <script defer>
-         $(document).ready(function () {
-             $('#arrival ,#departure').datepicker({
-                 dateFormat: 'yy-mm-dd'
-             });
-         
-             $('.calendar').on('click', function () {
-                 $('#arrival').focus();
-             });
-         });
+      <script>
+         AOS.init();
       </script>
-      <script defer>
-         document.addEventListener('DOMContentLoaded', () => {
-             const navbar = document.querySelector('.navbar');
-             let lastScrollTop = 0;
-         
-             window.addEventListener('scroll', () => {
-                 const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-         
-                 if (currentScroll > lastScrollTop) {
-         
-                     navbar.classList.add('navbar-hidden');
-                 } else {
-         
-                     navbar.classList.remove('navbar-hidden');
-                 }
-         
-                 lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-             });
-         });
-      </script>
+      <script defer src="./js/datepicker.js"></script>
+
+    
    </body>
 </html>

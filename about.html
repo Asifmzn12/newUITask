@@ -1,424 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-         crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-         crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
-      <link rel="stylesheet" href="./css/bootstrap.min.css">
-      <link rel="stylesheet" href="./css/contactus.css">
-      <link rel="stylesheet" href="./css/about.css">
-   </head>
-   <body>
-      <div class="container-fluid g-0">
-         <div class="wrapper">
-            <nav class="navbar navbar-expand-lg bg-linear text-white py-3 px-2 fixed-top">
-               <div class="container-fluid">
-                  <a class="navbar-brand text-white" href="./home.html">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
+   <link rel="stylesheet" href="./css/contactus.css">
+   <link rel="stylesheet" href="./css/about.css">
+</head>
+
+<body>
+   <div class="container-fluid g-0">
+      <div class="wrapper">
+         <nav class="navbar navbar-expand-lg bg-linear text-white py-3 px-2 fixed-top">
+            <div class="container-fluid">
+               <a class="navbar-brand text-white" href="./home.html">
                   <img src="./assests/images/logo.webp" class="img-fluid" alt="Logo">
-                  </a>
-                  <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                     aria-label="Toggle navigation">
+               </a>
+               <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                  aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse justify-content-end position-relative z-1" id="navbarNav">
-                     <ul class="navbar-nav gap-2 bg-sm-black align-items-center gy-3 py-4">
-                        <li class="nav-item">
-                           <a href="./home.html" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="./vacationRental.html" class="nav-link"> Vacation Rentals</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="./about.html" class="nav-link">About us</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="./contactus.html" class="nav-link">Contact Us</a>
-                        </li>
-                     </ul>
-                  </div>
+               </button>
+               <div class="collapse navbar-collapse justify-content-end position-relative z-1" id="navbarNav">
+                  <ul class="navbar-nav gap-2 bg-sm-black align-items-center gy-3 py-4">
+                     <li class="nav-item">
+                        <a href="./home.html" class="nav-link">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="./vacationRental.html" class="nav-link"> Vacation Rentals</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="./about.html" class="nav-link">About us</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="./contactus.html" class="nav-link">Contact Us</a>
+                     </li>
+                  </ul>
                </div>
-            </nav>
-            <div id="content" class="flex-grow-1">
-               <div class="hero-section ">
-                  <div class="container container-wrapper">
-                     <div class="row justify-content-between gy-3 align-items-center">
-                        <div class="col-md-4">
-                           <div class="contact-text d-flex flex-column gap-1">
-                              <h1 class="">About Us</h1>
-                              <h5 class="m-0">We love to provide the best serivces</h5>
-                           </div>
+            </div>
+         </nav>
+         <div id="content" class="flex-grow-1">
+            <div class="hero-section ">
+               <div class="container container-wrapper">
+                  <div class="row justify-content-between gy-3 align-items-center">
+                     <div class="col-md-4">
+                        <div class="contact-text d-flex flex-column gap-1">
+                           <h1 class="">About Us</h1>
+                           <h5 class="m-0">We love to provide the best serivces</h5>
                         </div>
-                        <div class="col-md-8 about_image text-center">
-                           <img src="./assests/images/aboutus.webp" class="img-fluid" alt="contactbg">
-                        </div>
+                     </div>
+                     <div class="col-md-8 about_image text-center">
+                        <img src="./assests/images/aboutus.webp" class="img-fluid" alt="contactbg">
                      </div>
                   </div>
                </div>
-               <section id="Aboutus">
-                  <div class="container py-lg-5 py-3">
-                     <h2 class="mb-3">ABOUT OUR COMPANY</h2>
-                     <div class="row justify-content-between">
-                        <div class="col-md-7">
-                           <div class="text">
-                              <div>
-                                 <p class="p1"><strong><span class="s1">Company Mission</span></strong></p>
-                                 <ul>
-                                    <li>We actively improve the services provided to travelers through premium
-                                       hospitality while maximizing revenue for homeowners in a safe way.
-                                    </li>
-                                 </ul>
-                              </div>
-                              <div>
-                                 <p class="p1" style="text-align: left;"><strong><span class="s1">Our
-                                    Purpose</span></strong>
-                                 </p>
-                                 <ul>
-                                    <li>Our purpose is to honor God by offering love, kindness, and integrity to
-                                       every person we encounter.&nbsp;<em><span class="s1">Colossians 1:16b</span></em>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <div>
-                              </div>
-                              <p class="p1"><strong><span class="s1">Core Values/Beliefs</span></strong></p>
+            </div>
+            <section id="Aboutus" style="overflow-x: hidden;">
+               <div class="container py-lg-5 py-3"  data-aos="fade-right"
+               data-aos-duration="3000">
+                  <h2 class="mb-3">ABOUT OUR COMPANY</h2>
+                  <div class="row gy-2 justify-content-between">
+                     <div class="col-lg-7">
+                        <div class="text">
+                           <div>
+                              <p class="p1"><strong><span class="s1">Company Mission</span></strong></p>
                               <ul>
-                                 <li>Service –&nbsp;Serve clients, customers, and the community, be proactive
-                                 </li>
-                                 <li>Integrity –&nbsp;Be trustworthy, honest, hard-working, diligent, transparent
-                                    and respectful
-                                 </li>
-                                 <li>Attitude –&nbsp;Maintain a consistently positive attitude, solution-oriented
-                                    problem-solvers
-                                 </li>
-                                 <li>Kindness –&nbsp;Have an open heart for everyone we come into contact with,
-                                    treat others as we want to be treated
-                                 </li>
-                                 <li>Success –&nbsp;Innovative, focus, forward-thinking, industry knowledge,
-                                    data-driven decision making
+                                 <li>We actively improve the services provided to travelers through premium
+                                    hospitality while maximizing revenue for homeowners in a safe way.
                                  </li>
                               </ul>
                            </div>
-                        </div>
-                        <div class="col-md-4">
-                           <div class="card shadow py-4 ">
-                              <h4 class="text-center mb-3">Search Our Rentals</h4>
-                              <form class="form my-2 ">
-                                 <div class="row mx-1 gy-3 justify-content-between align-items-center">
-                                    <div class="col-6">
-                                       <div class="position-relative">
-                                          <input type="text" id="arrival" autocomplete="off"   class="form-control " tabindex="1"
-                                             placeholder="Arrival">
-                                          <i class="fa-solid fa-calendar-days calendar "></i>
-                                       </div>
-                                    </div>
-                                    <div class="col-6">
-                                       <div class="position-relative">
-                                          <input type="text" id="departure" autocomplete="off"   class="form-control " tabindex="1"
-                                             placeholder="Departure">
-                                          <i class="fa-solid fa-calendar-days calendar "></i>
-                                       </div>
-                                    </div>
-                                    <div class="col-12">
-                                       <select class="form-select " aria-label="Default select example">
-                                          <option selected>Occupancy</option>
-                                          <option value="1">One</option>
-                                          <option value="2">Two</option>
-                                          <option value="3">Three</option>
-                                       </select>
-                                    </div>
-                                    <div class=" col-12">
-                                       <select class="form-select " aria-label="Default select example">
-                                          <option selected>Destination</option>
-                                          <option value="1">One</option>
-                                          <option value="2">Two</option>
-                                          <option value="3">Three</option>
-                                       </select>
-                                    </div>
-                                    <div class=" col-12">
-                                       <button type="submit" class="btn btn-search w-100 ">Search</button>
-                                    </div>
-                                 </div>
-                              </form>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </section>
-               <section class="startingJourney py-5" id="formcontainer">
-                  <div class="container py-lg-3 py-3">
-                     <h2 class="text-start mb-3 ">How It All Began</h2>
-                     <div class="timeline row flex-column">
-                        <div class="container1 left col-md-6">
-                           <div class="content ">
-                              <h2>2009</h2>
-                              <p>In 2009, after the birth of the first of four daughters, Sharon resigned from
-                                 advertising sales to stay home for a period of time. Also at that time, the
-                                 economy was beginning its decline, resulting in a decrease in appliance sales
-                                 for her husband Michael, who owns Harway Appliances and Doors. This all occurred
-                                 about three months after they moved into an impressive, custom home in the
-                                 awesome Bouldin neighborhood. This home carried with it a large mortgage and
-                                 bills, and the Walkers did not want to sell the home that they had just poured
-                                 18 months of their heart and souls into. After much research, Sharon heard about
-                                 a company called HomeAway and decided this may be an option to allow them to
-                                 keep their home. When the neighbor across the street asked if they knew anyone
-                                 who needed a very small rental for a year, they knew it was a sign to move
-                                 forward. So, the Walkers moved into the house across the street, and listed the
-                                 <a class="text-decoration-none" href="#">Daniel House</a> on HomeAway as a
-                                 vacation rental.
+                           <div>
+                              <p class="p1" style="text-align: left;"><strong><span class="s1">Our
+                                       Purpose</span></strong>
                               </p>
+                              <ul>
+                                 <li>Our purpose is to honor God by offering love, kindness, and integrity to
+                                    every person we encounter.&nbsp;<em><span class="s1">Colossians 1:16b</span></em>
+                                 </li>
+                              </ul>
                            </div>
-                        </div>
-                        <div class="container1 col-md-6 right">
-                           <div class="content">
-                              <h2>2010</h2>
-                              <p>The bookings rolled in, partially because she had a six bedroom house listed for
-                                 $500 per night (WOW!), and partially because this was one of very few homes
-                                 listed in Austin. As Sharon managed the home from across the street, she became
-                                 a true expert in screening guests. The neighbors noticed her success, and as
-                                 rates eventually increased they started asking if she would rent their homes on
-                                 occasion. In 2010, SXSW guests came knocking (more like banging) on the door.
-                                 There were simply not enough hotels and homes in Austin to accommodate all of
-                                 the incoming guests. Two guests in particular, a VP at Apple traveling with a VP
-                                 at Google, requested that she reach out to her friends to see if anyone would be
-                                 willing to accommodate them. she sent 30 emails and got 15 responses of
-                                 “Absolutely!” and she immediately noted that this was an unserved market.
-                              </p>
+                           <div>
                            </div>
-                        </div>
-                        <div class="container1 col-md-6 left">
-                           <div class="content">
-                              <h2>2011</h2>
-                              <p>There weren’t any management companies in Austin at that time, so the need for
-                                 management services was huge. Once people got word of what she was doing, the
-                                 calls seeking management started pouring in. She managed on her own for a couple
-                                 of years, took her business under the umbrella of a real estate company for a
-                                 couple of years, and then determined that these services deserved to be separate
-                                 from traditional real estate services. The name Walker Luxury Vacation Rentals
-                                 originated at that time.
-                              </p>
-                           </div>
-                        </div>
-                        <div class="container1 col-md-6 right">
-                           <div class="content">
-                              <h2>Since Then</h2>
-                              <p>Since then, Sharon and her incredible team have brought increased and cutting
-                                 edge technology to the Austin market without sacrificing top notch, hands-on
-                                 services. There is a strong principle at Walker Luxury Vacation Rentals that
-                                 excellent services can be offered to both the guests and the homeowners and they
-                                 strive to meet that expectation every day. The <a href="#">Daniel House</a>,
-                                 from which the business originated, continues as a premium Austin property
-                                 available for rent to guests looking to travel to this amazing city.
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </section>
-               <section id="find-more">
-                  <div class="container py-lg-5 py-4">
-                     <h1 class="mb-md-4 mb-3">Find Out More</h1>
-                     <div class="row gy-3">
-                        <div class="col-md-4  d-flex">
-                           <div class="card shadow">
-                              <img src="./assests/images/team.webp" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                 <h4 class="card-title mt-2">
-                                    <a href="./team.html" class="text-primary text-decoration-none">Meet Our Team
-                                    </a>
-                                 </h4>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-md-4  d-flex">
-                           <div class="card shadow">
-                              <img src="/assests/images/vacactionRental.webp" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                 <h4 class="card-title mt-2">
-                                    <a href="#" class="text-primary text-decoration-none">View All Vacation
-                                    Rental
-                                    </a>
-                                 </h4>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-md-4  d-flex">
-                           <div class="card shadow">
-                              <img src="/assests/images/contactus2.webp" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                 <h4 class="card-title mt-2">
-                                    <a href="./contactus.html" class="text-primary text-decoration-none">Contact Our Team
-                                    </a>
-                                 </h4>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </section>
-            </div>
-            <section class="footer py-lg-4 py-1 text-white overflow-hidden">
-               <footer class="container py-5">
-                  <div class="row gy-3">
-                     <div class="col-md-4 text-white d-flex flex-column gap-3">
-                        <div class="contact">
-                           <h4 class="title">Contact Us</h4>
-                           <p class="mb-0">Walker Luxury Vacation Rentals</p>
-                           <p class="mb-0">PO Box 163065</p>
-                           <p class="mb-0">Austin, TX 78716</p>
-                           <p>Phone: <a href="#">512-501-3580</a></p>
-                        </div>
-                        <!-- <div class="proud-members">
-                           <h4 class="title text-capitalize">Proud Members Of</h4>
-                           <a href="#"><img src="./assests/images/verma.png" class="img-fluid" alt="VRMA Members"></a>
-                           </div> -->
-                     </div>
-                     <div class="col-md-4">
-                        <div class="quick-links">
-                           <h4 class="title">Quick Links</h4>
-                           <ul class="list-unstyled d-flex flex-column gap-3">
-                              <li class=""><a href="#">Home</a></li>
-                              <li class=""><a href="#" target="_blank" rel="noopener">Guest Portal</a></li>
-                              <li class=""><a href="#" target="_blank" rel="noopener">Owner Login</a></li>
-                              <li class=""><a href="#">About Us</a></li>
-                              <li class=""><a href="#">Sitemap</a></li>
+                           <p class="p1"><strong><span class="s1">Core Values/Beliefs</span></strong></p>
+                           <ul>
+                              <li>Service –&nbsp;Serve clients, customers, and the community, be proactive
+                              </li>
+                              <li>Integrity –&nbsp;Be trustworthy, honest, hard-working, diligent, transparent
+                                 and respectful
+                              </li>
+                              <li>Attitude –&nbsp;Maintain a consistently positive attitude, solution-oriented
+                                 problem-solvers
+                              </li>
+                              <li>Kindness –&nbsp;Have an open heart for everyone we come into contact with,
+                                 treat others as we want to be treated
+                              </li>
+                              <li>Success –&nbsp;Innovative, focus, forward-thinking, industry knowledge,
+                                 data-driven decision making
+                              </li>
                            </ul>
                         </div>
                      </div>
-                     <div class="col-md-4">
-                        <div class="row">
-                           <div class="col-md-8 col-9  d-flex flex-column gap-3">
-                              <h4 class="title text-capitalize">Find property by name</h4>
-                              <select class="form-select">
-                                 <option value="/">- Choose -</option>
-                                 <option>Always on my Mind</option>
-                                 <option>Beautiful Day</option>
-                                 <option>Daniel House</option>
-                                 <option>French Polo Estate</option>
-                                 <option>Good Life</option>
-                                 <option>Good Vibrations</option>
-                                 <option>Here Comes the Sun</option>
-                                 <option>Hill Country Hideaway</option>
-                                 <option>Isnt She Lovely</option>
-                                 <option>Lake Austin Modern</option>
-                                 <option>Lake Austin Retreat</option>
-                                 <option>Lake Travis Escape</option>
-                                 <option>Loft On Congress</option>
-                                 <option>Lola's Lakefront</option>
-                                 <option>Send The Light</option>
-                                 <option>Skyhurst</option>
-                                 <option>Soak Up The Sun</option>
-                                 <option>Some Kind of Wonderful</option>
-                                 <option>South Congress Custom House</option>
-                                 <option>Southside of Heaven</option>
-                                 <option>Stairway to Heaven</option>
-                                 <option>Sundown Escape</option>
-                                 <option>Taking in the View</option>
-                                 <option>The Owners House</option>
-                                 <option>Westlake Hills Designer</option>
-                                 <option>Windwalker Ranch</option>
-                                 <option>Wish You Were Here</option>
-                              </select>
-                              </span>
-                           </div>
-                           <a href="#" rel="botton"><img
-                              src="https://www.walkervr.com/wp-content/uploads/2023/06/Vrbo-VHOTY-Badge_2023_Arctic-Fjord.png"
-                              class="awardImg" width="100" height="100" alt="Vacation home of the year 2023"
-                              title="Vacation home of the year 2023"></a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row py-5 gy-3 inner-footer rounded my-3 justify-content-around ">
-                     <div class="col-md-4">
-                        <div class="aboutcompony d-flex flex-column gap-3 align-items-start">
-                           <img src="./assests/images/verma.webp" class="img-fluid" alt="compony-logo">
-                           <p class="m-0 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis autem
-                              dolorem
-                              vitae, labore eligendi molestias voluptatum optio eveniet fuga adipisci.
-                           </p>
-                        </div>
-                     </div>
-                     <div class="col-md-8 d-flex justify-content-md-end d-none d-md-flex">
-                        <div class="subscribe ">
-                           <h4 class="text-capitalize text-center">subscribe to our newsletter</h4>
-                           <form>
-                              <div class="position-relative">
-                                 <input type="email" class="form-control inputsbs " placeholder="xyz@gmail.com"
-                                    id="" aria-describedby="emailHelp">
-                                 <a class="text-decoration-none sbscribe"><i
-                                    class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
+                     <div class="col-lg-4"  data-aos="fade-left"
+                     data-aos-duration="3000">
+                        <div class="card shadow py-4 ">
+                           <h4 class="text-center mb-3">Search Our Rentals</h4>
+                           <form class="form my-2 ">
+                              <div class="row mx-1 gy-3 justify-content-between align-items-center">
+                                 <div class="col-6">
+                                    <div class="position-relative">
+                                       <input type="text" id="arrival" autocomplete="off" class="form-control "
+                                          tabindex="1" placeholder="Arrival">
+                                       <i class="fa-solid fa-calendar-days calendar "></i>
+                                    </div>
+                                 </div>
+                                 <div class="col-6">
+                                    <div class="position-relative">
+                                       <input type="text" id="departure" autocomplete="off" class="form-control "
+                                          tabindex="1" placeholder="Departure">
+                                       <i class="fa-solid fa-calendar-days calendar "></i>
+                                    </div>
+                                 </div>
+                                 <div class="col-12">
+                                    <select class="form-select " aria-label="Default select example">
+                                       <option selected>Occupancy</option>
+                                       <option value="1">One</option>
+                                       <option value="2">Two</option>
+                                       <option value="3">Three</option>
+                                    </select>
+                                 </div>
+                                 <div class=" col-12">
+                                    <select class="form-select " aria-label="Default select example">
+                                       <option selected>Destination</option>
+                                       <option value="1">One</option>
+                                       <option value="2">Two</option>
+                                       <option value="3">Three</option>
+                                    </select>
+                                 </div>
+                                 <div class=" col-12">
+                                    <button type="submit" class="btn btn-search w-100 ">Search</button>
+                                 </div>
                               </div>
                            </form>
                         </div>
                      </div>
-                     <hr class="w-100">
-                     <div class="policies">
-                        <ul class="d-flex flex-column flex-md-row gap-3 list-unstyled ">
-                           <li> <a class="">Terms of use</a></li>
-                           <li> <a class="border-">Privacy & Cockies</a></li>
-                           <li><a class="">Terms & Conditions</a></li>
-                        </ul>
-                     </div>
                   </div>
-                  <div class="copywrite d-flex flex-wrap justify-content-between mt-4 gap-3">
-                     <p class="m-0">© 2024 Walker Luxury Vacation Rentals All rights reserved.</p>
-                     <div class="social d-flex align-items-center gap-3">
-                        <span>Follow us : </span>
-                        <div class="social-icons d-flex gap-3">
-                           <i class="fa-brands fa-facebook-f " title="facebook"></i>
-                           <i class="fa-brands fa-instagram" title="Instagram"></i>
-                           <i class="fa-brands fa-x-twitter " title="X"></i>
-                           <i class="fa-brands fa-linkedin-in" title="LinkedIn"></i>
+               </div>
+            </section>
+            <section class="startingJourney py-5" id="formcontainer">
+               <div class="container py-lg-3 py-3">
+                  <h2 class="text-start mb-3 "  data-aos="fade-down"
+                  data-aos-duration="3000">How It All Began</h2>
+                  <div class="timeline row flex-column">
+                     <div class="container1 left col-md-6">
+                        <div class="content ">
+                           <h2>2009</h2>
+                           <p>In 2009, after the birth of the first of four daughters, Sharon resigned from
+                              advertising sales to stay home for a period of time. Also at that time, the
+                              economy was beginning its decline, resulting in a decrease in appliance sales
+                              for her husband Michael, who owns Harway Appliances and Doors. This all occurred
+                              about three months after they moved into an impressive, custom home in the
+                              awesome Bouldin neighborhood. This home carried with it a large mortgage and
+                              bills, and the Walkers did not want to sell the home that they had just poured
+                              18 months of their heart and souls into. After much research, Sharon heard about
+                              a company called HomeAway and decided this may be an option to allow them to
+                              keep their home. When the neighbor across the street asked if they knew anyone
+                              who needed a very small rental for a year, they knew it was a sign to move
+                              forward. So, the Walkers moved into the house across the street, and listed the
+                              <a class="text-decoration-none" href="#">Daniel House</a> on HomeAway as a
+                              vacation rental.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="container1 col-md-6 right">
+                        <div class="content">
+                           <h2>2010</h2>
+                           <p>The bookings rolled in, partially because she had a six bedroom house listed for
+                              $500 per night (WOW!), and partially because this was one of very few homes
+                              listed in Austin. As Sharon managed the home from across the street, she became
+                              a true expert in screening guests. The neighbors noticed her success, and as
+                              rates eventually increased they started asking if she would rent their homes on
+                              occasion. In 2010, SXSW guests came knocking (more like banging) on the door.
+                              There were simply not enough hotels and homes in Austin to accommodate all of
+                              the incoming guests. Two guests in particular, a VP at Apple traveling with a VP
+                              at Google, requested that she reach out to her friends to see if anyone would be
+                              willing to accommodate them. she sent 30 emails and got 15 responses of
+                              “Absolutely!” and she immediately noted that this was an unserved market.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="container1 col-md-6 left">
+                        <div class="content">
+                           <h2>2011</h2>
+                           <p>There weren’t any management companies in Austin at that time, so the need for
+                              management services was huge. Once people got word of what she was doing, the
+                              calls seeking management started pouring in. She managed on her own for a couple
+                              of years, took her business under the umbrella of a real estate company for a
+                              couple of years, and then determined that these services deserved to be separate
+                              from traditional real estate services. The name Walker Luxury Vacation Rentals
+                              originated at that time.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="container1 col-md-6 right">
+                        <div class="content">
+                           <h2>Since Then</h2>
+                           <p>Since then, Sharon and her incredible team have brought increased and cutting
+                              edge technology to the Austin market without sacrificing top notch, hands-on
+                              services. There is a strong principle at Walker Luxury Vacation Rentals that
+                              excellent services can be offered to both the guests and the homeowners and they
+                              strive to meet that expectation every day. The <a href="#">Daniel House</a>,
+                              from which the business originated, continues as a premium Austin property
+                              available for rent to guests looking to travel to this amazing city.
+                           </p>
                         </div>
                      </div>
                   </div>
+               </div>
+            </section>
+            <section id="find-more">
+               <div class="container py-lg-5 py-4">
+                  <h1 class="mb-md-4 mb-3"  data-aos="fade-down"
+                  data-aos-duration="3000">Find Out More</h1>
+                  <div class="row gy-3">
+                     <div class="col-md-4  d-flex"  data-aos="fade-up"
+                     data-aos-duration="3000">
+                        <div class="card shadow">
+                           <img src="./assests/images/team.webp" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h4 class="card-title mt-2">
+                                 <a href="./team.html" class="text-primary text-decoration-none">Meet Our Team
+                                 </a>
+                              </h4>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4  d-flex"  data-aos="fade-up"
+                     data-aos-duration="3000">
+                        <div class="card shadow">
+                           <img src="/assests/images/vacactionRental.webp" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h4 class="card-title mt-2">
+                                 <a href="#" class="text-primary text-decoration-none">View All Vacation
+                                    Rental
+                                 </a>
+                              </h4>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4  d-flex"  data-aos="fade-up"
+                     data-aos-duration="3000">
+                        <div class="card shadow">
+                           <img src="/assests/images/contactus2.webp" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h4 class="card-title mt-2">
+                                 <a href="./contactus.html" class="text-primary text-decoration-none">Contact Our Team
+                                 </a>
+                              </h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </section>
          </div>
+         <section class="footer py-lg-4 py-1 text-white overflow-hidden">
+            <footer class="container py-5">
+               <div class="row gy-3">
+                  <div class="col-md-4 text-white d-flex flex-column gap-3">
+                     <div class="contact d-flex flex-column gap-2">
+                        <h4 class="title">Contact Us</h4>
+                        <p class="mb-0">Walker Luxury Vacation Rentals</p>
+                        <p class="mb-0">PO Box 163065</p>
+                        <p class="mb-0">Austin, TX 78716</p>
+                        <p>Phone: <a href="#">512-501-3580</a></p>
+                     </div>
+                     <!-- <div class="proud-members">
+                           <h4 class="title text-capitalize">Proud Members Of</h4>
+                           <a href="#"><img src="./assests/images/verma.png" class="img-fluid" alt="VRMA Members"></a>
+                           </div> -->
+                  </div>
+                  <div class="col-md-4">
+                     <div class="quick-links">
+                        <h4 class="title">Quick Links</h4>
+                        <ul class="list-unstyled d-flex flex-column gap-3">
+                           <li class=""><a href="#">Home</a></li>
+                           <li class=""><a href="#" target="_blank" rel="noopener">Guest Portal</a></li>
+                           <li class=""><a href="#" target="_blank" rel="noopener">Owner Login</a></li>
+                           <li class=""><a href="#">About Us</a></li>
+                           <li class=""><a href="#">Sitemap</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="row">
+                        <div class="col-sm-8 col-12  d-flex flex-column gap-3">
+                           <h4 class="title text-capitalize">Find property by name</h4>
+                           <select class="form-select">
+                              <option value="/">- Choose -</option>
+                              <option>Always on my Mind</option>
+                              <option>Beautiful Day</option>
+                              <option>Daniel House</option>
+                              <option>French Polo Estate</option>
+                              <option>Good Life</option>
+                              <option>Good Vibrations</option>
+                              <option>Here Comes the Sun</option>
+                              <option>Hill Country Hideaway</option>
+                              <option>Isnt She Lovely</option>
+                              <option>Lake Austin Modern</option>
+                              <option>Lake Austin Retreat</option>
+                              <option>Lake Travis Escape</option>
+                              <option>Loft On Congress</option>
+                              <option>Lola's Lakefront</option>
+                              <option>Send The Light</option>
+                              <option>Skyhurst</option>
+                              <option>Soak Up The Sun</option>
+                              <option>Some Kind of Wonderful</option>
+                              <option>South Congress Custom House</option>
+                              <option>Southside of Heaven</option>
+                              <option>Stairway to Heaven</option>
+                              <option>Sundown Escape</option>
+                              <option>Taking in the View</option>
+                              <option>The Owners House</option>
+                              <option>Westlake Hills Designer</option>
+                              <option>Windwalker Ranch</option>
+                              <option>Wish You Were Here</option>
+                           </select>
+                           </span>
+                        </div>
+                        <a href="#" rel="botton"><img
+                           src="./assests/images/Vrbo-VHOTY-Badge_2023_Arctic-Fjord.webp"
+                              class="awardImg" width="100" height="100" alt="Vacation home of the year 2023"
+                              title="Vacation home of the year 2023"></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="row py-5 gy-3 inner-footer rounded my-3 justify-content-around ">
+                  <div class="col-md-4">
+                     <div class="aboutcompony d-flex flex-column gap-3 align-items-start">
+                        <img src="./assests/images/verma.webp" class="img-fluid" alt="compony-logo">
+                        <p class="m-0 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis autem
+                           dolorem
+                           vitae, labore eligendi molestias voluptatum optio eveniet fuga adipisci.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-md-8 d-flex justify-content-md-end d-none d-md-flex">
+                     <div class="subscribe ">
+                        <h4 class="text-capitalize text-center">subscribe to our newsletter</h4>
+                        <form>
+                           <div class="position-relative">
+                              <input type="email" class="form-control inputsbs " placeholder="xyz@gmail.com" id=""
+                                 aria-describedby="emailHelp">
+                              <a class="text-decoration-none sbscribe"><i
+                                    class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <hr class="w-100">
+                  <div class="policies">
+                     <ul class="d-flex flex-column flex-md-row gap-3 list-unstyled ">
+                        <li> <a class="">Terms of use</a></li>
+                        <li> <a class="border-">Privacy & Cockies</a></li>
+                        <li><a class="">Terms & Conditions</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="copywrite d-flex flex-wrap justify-content-between mt-4 gap-3">
+                  <p class="m-0">© 2024 Walker Luxury Vacation Rentals All rights reserved.</p>
+                  <div class="social d-flex align-items-center gap-3">
+                     <span>Follow us : </span>
+                     <div class="social-icons d-flex gap-3">
+                        <i class="fa-brands fa-facebook-f " title="facebook"></i>
+                        <i class="fa-brands fa-instagram" title="Instagram"></i>
+                        <i class="fa-brands fa-x-twitter " title="X"></i>
+                        <i class="fa-brands fa-linkedin-in" title="LinkedIn"></i>
+                     </div>
+                  </div>
+               </div>
+         </section>
       </div>
-      </footer>
-      </section>
-      </div>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-      <script src="./js/bootstrap.bundle.js" defer></script>
-      <script defer>
-         $(document).ready(function() {
-             $('#arrival ,#departure').datepicker({
-                 dateFormat: 'yy-mm-dd'
-             });
-         
-             $('.calendar').on('click', function() {
-                 $('#arrival').focus();
-             });
-         });
-      </script>
-      <script defer>
-         document.addEventListener('DOMContentLoaded', () => {
-             const navbar = document.querySelector('.navbar');
-             let lastScrollTop = 0;
-         
-             window.addEventListener('scroll', () => {
-                 const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-         
-                 if (currentScroll > lastScrollTop) {
-         
-                     navbar.classList.add('navbar-hidden');
-                 } else {
-         
-                     navbar.classList.remove('navbar-hidden');
-                 }
-         
-                 lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-             });
-         });
-      </script>
-   </body>
+   </div>
+   </footer>
+   </section>
+   </div>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script defer src="./js/index.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+   <script src="./js/bootstrap.bundle.js" defer></script>
+   <script>
+      AOS.init();
+   </script>
+    <script defer src="./js/datepicker.js"></script>
+
+
+</body>
+
 </html>
