@@ -52,6 +52,10 @@
   background-color: inherit;
   width: 50%;
 }
+#Aboutus{
+  position: relative;
+  z-index: -999;
+}
 
 /* The circles  */
 .container1::after {
